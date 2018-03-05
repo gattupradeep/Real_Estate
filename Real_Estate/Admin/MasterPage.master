@@ -1,0 +1,437 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .sidebar-nav-fixed {
+        padding: 9px 0;
+        position:fixed;
+        left:20px;
+        top:150px;
+        width:250px;
+        }
+
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="container-fluid">
+  
+            <div class="row-fluid navbar-fixed-top" style="background-color:rgb(201,201,80);font-size:14px;">
+                    <div class="span2">
+                    <img src="../images/logo_e.png" height="100px" width="200px" />
+                    </div>
+                <div class="span10">
+                <div class="row-fluid">
+                    <div class="span10">
+                        <center>
+                            <h3>Suvarna Bhoomi Developers Pvt. Ltd.</h3>
+                        <h4>Tag Line Of Company</h4>    
+                        </center>
+                    </div>
+                    <div class="span2">
+                             <h5 class="row-fluid pull-right">Welcome Sekhar</h5><br />
+                             <h5 class="row-fluid pull-right"><a href="" style="color:white">Logout</a></h5>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                                        
+                <div class="navbar " style=" font-size: 14px;">
+                         <div class="navbar-inner">
+                         <div class="container" style="width: auto;">
+   <div class="row-fluid">
+       <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle js-activated">Receipts<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Add Receipts</a></li>
+                <li><a tabindex="-1" href="#">Manage Receipts</a></li>
+              </ul>
+            </li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle js-activated">Commission<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Add Commission</a></li>
+                <li><a tabindex="-1" href="#">Manage Commissions</a></li>
+              </ul>
+            </li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle js-activated">Vouchers<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Journal Voucher</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">Add Journal Voucher</a></li>
+                    <li><a tabindex="-1" href="#">Manage Journal Voucher</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">Tds Voucher</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">Add Tds Voucher</a></li>
+                    <li><a tabindex="-1" href="#">Manage Tds Voucher</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle js-activated">Reports<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu"><a tabindex="-1" href="#">Collection</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Daily Collection Report</a></li>
+                        <li><a tabindex="-1" href="#">Collection Report Ledger</a></li>
+                        <li><a tabindex="-1" href="#">Daily Collection Report(Summary)</a></li>
+                        <li><a tabindex="-1" href="#">Daily Collection Report & Day Book Updation</a></li>
+                        <li><a tabindex="-1" href="#">Branch Code Wise Collection Report from Receipts</a></li>
+                        <li class="dropdown-submenu"><a tabindex="-1" href="#">Statistical Reports Menu</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Monthly Collection</a></li>
+                                <li><a tabindex="-1" href="#">Day Wise Collection</a></li>
+                                <li><a tabindex="-1" href="#">All Groups Collection/ NOP</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a tabindex="-1" href="#">Collection Executive Reports Menu</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Collection Executive Report(Detailed)</a></li>
+                                <li><a tabindex="-1" href="#">All Collections Executives Collections</a></li>
+                                <li><a tabindex="-1" href="#">All Coll. Executives No. Of. PB's</a></li>
+                                <li><a tabindex="-1" href="#">All  Coll. Exe. Performance(Group)</a></li>
+                                <li><a tabindex="-1" href="#">All Coll.Exe. Per.(group)(collection-Off)</a></li>
+                                <li><a tabindex="-1" href="#">Coll. Exe Wise Pb. Deposit In Between</a></li>
+                                <li><a tabindex="-1" href="#">Coll. Exe. Wise Allotted/Collected PBS</a></li>
+                            </ul>
+                        </li>
+                        <li><a tabindex="-1" href="#">Check Statement(CR,RP,CS)</a></li>
+                        <li><a tabindex="-1" href="#">Other Brnach Collection(PB Wise)</a></li>
+                        <li><a tabindex="-1" href="#">Collection Status Wise Report</a></li>
+                        <li><a tabindex="-1" href="#">Refund Pass Book Details</a></li>
+                        <li><a tabindex="-1" href="#">All Groups Collection</a></li>
+                        <li><a tabindex="-1" href="#">Cheques Reports(Deposit)</a></li>
+                        <li><a tabindex="-1" href="#">Cheque Status Wise Reports</a></li>
+                      </ul>
+                </li>
+                <li class="dropdown-submenu"><a tabindex="-1" href="#">Commission</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Daily Commission Report</a></li>
+                        <li><a tabindex="-1" href="#">Commission Report Ledger</a></li>
+                        <li><a tabindex="-1" href="#">D.C.M.R. Summary Report</a></li>
+                        <li><a tabindex="-1" href="#">D.C.M.R. Daily Summary</a></li>
+                        <li><a tabindex="-1" href="#">Statistical Day Wise</a></li>
+                        <li><a tabindex="-1" href="#">Statistical Month Wise</a></li>
+                        <li><a tabindex="-1" href="#">Commission Drawings Report</a></li>
+                        <li><a tabindex="-1" href="#">Commission Schedule Report</a></li>
+                        <li><a tabindex="-1" href="#">TDS Schedule Report</a></li>
+                        <li><a tabindex="-1" href="#">Branch Code Wise Commission Ledger </a></li>
+                        <li><a tabindex="-1" href="#">Individual Drawings(All Groups)</a></li>
+                        <li><a tabindex="-1" href="#">All Branch Comm.(Local/Other)</a></li>
+                        <li><a tabindex="-1" href="#">Monthly Comm./TDS Report</a></li>
+                        <li><a tabindex="-1" href="#">AG.Drawings for form-16 A(OLD)</a></li>
+                        <li><a tabindex="-1" href="#">AG Drawings for Form-16-A(New)</a></li>
+                        <li><a tabindex="-1" href="#">TDS Reports</a></li>
+                        <li><a tabindex="-1" href="#">Other Branch Comm. Ledger</a></li>
+                      </ul>
+                </li>
+                  <li class="dropdown-submenu"><a tabindex="-1" href="#">DayBook & JV's</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Day-Book Report</a></li>
+                        <li><a tabindex="-1" href="#">Day-Book Report (WithOut-JV)</a></li>
+                        <li><a tabindex="-1" href="#">Voucher Type Wise Rep(JV/CP/Others)</a></li>
+                        <li><a tabindex="-1" href="#">Check Status Wise Ledger Report</a></li>
+                        <li><a tabindex="-1" href="#">Daily Scroll</a></li>
+                        <li><a tabindex="-1" href="#">Cash Book</a></li>
+                        <li><a tabindex="-1" href="#">Cheq Book</a></li>
+                        <li><a tabindex="-1" href="#">Day Book (with Sub Code)</a></li>
+                        <li><a tabindex="-1" href="#">Cheq Status Wise Report</a></li>
+                        <li><a tabindex="-1" href="#">BRS..(u/t)</a></li>
+                        <li><a tabindex="-1" href="#">Child RadMenuItem 11</a></li>
+                        <li><a tabindex="-1" href="#">Child RadMenuItem 12</a></li>
+                        <li><a tabindex="-1" href="#">Child RadMenuItem 13</a></li>
+                      </ul>
+                </li>
+                  <li class="dropdown-submenu"><a tabindex="-1" href="#">Ledger</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Ledger Report</a></li>
+                        <li><a tabindex="-1" href="#">Ledger Report (SubCode Wise)</a></li>
+                        <li><a tabindex="-1" href="#">Continuous Run Ledger Report</a></li>
+                        <li><a tabindex="-1" href="#">All  Ledger Monthly Totals</a></li>
+                        <li><a tabindex="-1" href="#">Closing Balances Listing</a></li>
+                        <li><a tabindex="-1" href="#">SubCode Wise Report</a></li>
+                        <li><a tabindex="-1" href="#">Breaking Ledger Report</a></li>
+                        <li><a tabindex="-1" href="#">Subcode Wise Balances Report</a></li>
+                        <li><a tabindex="-1" href="#">Ledger Daywise Amount Report</a></li>
+                        <li><a tabindex="-1" href="#">Ledger Interest Calculation Report</a></li>
+                        <li><a tabindex="-1" href="#">Ledger Interest Calc (SubCode Wise)</a></li>
+                        <li><a tabindex="-1" href="#">Ledger With  Opposite Acc. Heads</a></li>
+                      </ul>
+                </li>
+                  <li class="dropdown-submenu"><a tabindex="-1" href="#">Trial Balance</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Trial Balence Report ( Normal)</a></li>
+                        <li><a tabindex="-1" href="#">Trial Balence Report.(Opening Balance)</a></li>
+                        <li><a tabindex="-1" href="#">Receips And Payment Reports</a></li>
+                        <li><a tabindex="-1" href="#">Receipts And Payments With Subcode</a></li>
+                        <li><a tabindex="-1" href="#">P & L Accounts</a></li>
+                      </ul>
+                </li>
+                  <li class="dropdown-submenu"><a tabindex="-1" href="#">Pass Books</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Pass Book Balances(Cash/Cheque)</a></li>
+                        <li><a tabindex="-1" href="#">Pass Book Account Copies Menu</a></li>
+                        <li><a tabindex="-1" href="#">PassBook Totals(ADM/SCR/RES)</a></li>
+                        <li><a tabindex="-1" href="#">Passbook Not Paid In the Period</a></li>
+                        <li><a tabindex="-1" href="#">Refunds Report</a></li>
+                        <li><a tabindex="-1" href="#">P.B. During the Month Collection</a></li>
+                        <li><a tabindex="-1" href="#">PassBook  Defaulters</a></li>
+                        <li><a tabindex="-1" href="#">Deposit Amount In Between</a></li>
+                        <li><a tabindex="-1" href="#">Due Amount In Between(Price-1)</a></li>
+                        <li><a tabindex="-1" href="#">P.B. Bookings During The Period</a></li>
+                        <li><a tabindex="-1" href="#">Un Allotted(Plot No) PassBooks</a></li>
+                        <li><a tabindex="-1" href="#">Monthly Passbook Collections</a></li>
+                        <li><a tabindex="-1" href="#">Refunds Shedule Report</a></li>
+                        <li><a tabindex="-1" href="#">Deposit In Between With Due</a></li>
+                        <li><a tabindex="-1" href="#">P.B's In Beteen Plot Nos.</a></li>
+                        <li><a tabindex="-1" href="#">INST.  No Wise P.B Collection</a></li>
+                        <li><a tabindex="-1" href="#">Creation Of OB for Next Year</a></li>
+                        <li><a tabindex="-1" href="#">Updation of OB from Previous Year</a></li>
+                      </ul>
+                </li>
+                  <li class="dropdown-submenu"><a tabindex="-1" href="#">Commission Agents</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Agents Dep. / Draw. report</a></li>
+                        <li><a tabindex="-1" href="#">Agents Team( Hierarch) Print</a></li>
+                        <li><a tabindex="-1" href="#">Agents Drawings Report(Ind.)</a></li>
+                        <li><a tabindex="-1" href="#">All Agents Drawings(from Com. file)</a></li>
+                        <li><a tabindex="-1" href="#">Agents Team Wise PB- Address</a></li>
+                        <li><a tabindex="-1" href="#">Agents Team Wise PB- Defaulters</a></li>
+                        <li><a tabindex="-1" href="#">Agent team Wise Deposit In Between</a></li>
+                        <li><a tabindex="-1" href="#">Agent Performance In  the Period</a></li>
+                        <li><a tabindex="-1" href="#">Agents Comm. Eligibilities</a></li>
+                        <li><a tabindex="-1" href="#">Monthly Agents Drawings Report</a></li>
+                        <li><a tabindex="-1" href="#">Agent Dep./Draw. Without Refunds</a></li>
+                        <li><a tabindex="-1" href="#">Agent Dep./Draw. Without Cutoff</a></li>
+                        <li><a tabindex="-1" href="#">Agent Dep./Draw./TDS Report</a></li>
+                        <li><a tabindex="-1" href="#">All Teams PB Bookings</a></li>
+                        <li><a tabindex="-1" href="#">All Teams PB Bookings & Deposits</a></li>
+                        <li><a tabindex="-1" href="#">Agent Deposit in Between Plots</a></li>
+                        <li><a tabindex="-1" href="#">Agents Com. Eligi. (All Groups)</a></li>
+                        <li><a tabindex="-1" href="#">All Teams Performance In the period</a></li>
+                        <li><a tabindex="-1" href="#">Dep./Draw.( All Groups w/o CutOffs)</a></li>
+                        <li><a tabindex="-1" href="#">Agent Per. In the Period(All Groups)</a></li>
+                        <li><a tabindex="-1" href="#">Agent Drawings Team Wise( All Groups)</a></li>
+                        <li><a tabindex="-1" href="#">Com. Elig. In Between PB joining Date</a></li>
+                        <li><a tabindex="-1" href="#">Com Elig( All Groups) In Between J. Dates</a></li>
+                        <li><a tabindex="-1" href="#">Creation Of OB  for Next Year</a></li>
+                        <li><a tabindex="-1" href="#">Updation of OB from Previous Year</a></li>
+                      </ul>
+                </li>
+                  <li class="dropdown-submenu"><a tabindex="-1" href="#">Address Labels</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Address Lables(Normal)</a></li>
+                        <li><a tabindex="-1" href="#">Address Lables(With Due Amounts)</a></li>
+                        <li><a tabindex="-1" href="#">Address Lables(Deposit Amounts)</a></li>
+                        <li><a tabindex="-1" href="#">Address Lables(2 per Row with phone)</a></li>
+                        <li><a tabindex="-1" href="#">Reservation Letters Print</a></li>
+                        <li><a tabindex="-1" href="#">Editing Reservation Letter Text</a></li>
+                      </ul>
+                </li>
+                  <li class="dropdown-submenu"><a tabindex="-1" href="#">Registration</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Sales Report</a></li>
+                        <li><a tabindex="-1" href="#">Registrations Report</a></li>
+                        <li><a tabindex="-1" href="#">Collection After Registration</a></li>
+                      </ul>
+                </li>
+                  <li class="dropdown-submenu"><a tabindex="-1" href="#">Land</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Contingent Liability Report</a></li>
+                        <li><a tabindex="-1" href="#">Land Payments Report</a></li>
+                        <li><a tabindex="-1" href="#">Land Lard Codes Print</a></li>
+                      </ul>
+                </li>
+                  <li class="dropdown-submenu"><a tabindex="-1" href="#">Layouts</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">Un Reserved Plot List</a></li>
+                        <li><a tabindex="-1" href="#">Reserved Plot List</a></li>
+                        <li><a tabindex="-1" href="#">Reserved Plot Reports</a></li>
+                        <li><a tabindex="-1" href="#">Both Mixed</a></li>
+                      </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle js-activated">Manage Site <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Option 1</a></li>
+                <li><a tabindex="-1" href="#">Option 2</a></li>
+                <li><a tabindex="-1" href="#">Option 3</a></li>
+                <li><a tabindex="-1" href="#">Option 4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+         </div>
+    </div>
+    </div>
+
+        </div>
+                    </div>
+                    </div>
+            </div>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+            <div class="row-fluid">
+                <div class="span2 sidebar-nav-fixed" style="border:1px solid; border-radius:8px;margin-top:20px;">
+                   
+                    <div id="side_accordion" class="accordion">
+						
+						<div class="accordion-group">
+							<div class="accordion-heading">
+								<a href="#collapseOne" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+									<i class="icon-folder-close"></i> Ventures
+								</a>
+							</div>
+							<div class="accordion-body collapse" id="collapseOne">
+								<div class="accordion-inner">
+									<ul class="nav nav-list">
+										<li><a href="javascript:void(0)">Create</a></li>
+										<li><a href="javascript:void(0)">Manage</a></li>
+										<li><a href="javascript:void(0)">Schemes</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading">
+								<a href="#collapseTwo" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+									<i class="icon-th"></i> Agents
+								</a>
+							</div>
+							<div class="accordion-body collapse" id="collapseTwo">
+								<div class="accordion-inner">
+									<ul class="nav nav-list">
+										<li><a href="javascript:void(0)">Create</a></li>
+										<li><a href="javascript:void(0)">Manage</a></li>
+										<li><a href="javascript:void(0)">Transfer</a></li>
+										<li><a href="javascript:void(0)">Agent Roles</a></li>
+										<li><a href="javascript:void(0)">Update Cadre</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading">
+								<a href="#collapseThree" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+									<i class="icon-user"></i> Customers
+								</a>
+							</div>
+							<div class="accordion-body collapse" id="collapseThree">
+								<div class="accordion-inner">
+									<ul class="nav nav-list">
+										<li><a href="javascript:void(0)">Create</a></li>
+										<li><a href="javascript:void(0)">Manage</a></li>
+									</ul>
+                                    
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading">
+								<a href="#collapseFour" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+									<i class="icon-cog"></i> Layouts
+								</a>
+							</div>
+							<div class="accordion-body collapse" id="collapseFour">
+								<div class="accordion-inner">
+									<ul class="nav nav-list">
+                                        <li><a href="javascript:void(0)">Create</a></li>
+										<li><a href="javascript:void(0)">Manage</a></li>
+										<%--<li class="nav-header">People</li>
+										<li class="active"><a href="javascript:void(0)">Account Settings</a></li>
+										<li><a href="javascript:void(0)">IP Adress Blocking</a></li>
+										<li class="nav-header">System</li>
+										<li><a href="javascript:void(0)">Site information</a></li>
+										<li><a href="javascript:void(0)">Actions</a></li>
+										<li><a href="javascript:void(0)">Cron</a></li>
+										<li class="divider"></li>
+										<li><a href="javascript:void(0)">Help</a></li>--%>
+									</ul>
+								</div>
+							</div>
+						</div>
+                        <div class="accordion-group">
+							<div class="accordion-heading">
+								<a href="#collapseFive" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+									<i class="icon-user"></i> Allotments
+								</a>
+							</div>
+							<div class="accordion-body collapse" id="collapseFive">
+								<div class="accordion-inner">
+									<ul class="nav nav-list">
+										<li><a href="javascript:void(0)">Allocate</a></li>
+										<li><a href="javascript:void(0)">Cancel</a></li>
+									</ul>
+                                    
+								</div>
+							</div>
+						</div>
+                        <div class="accordion-group">
+							<div class="accordion-heading">
+								<a href="#collapseSix" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+									<i class="icon-user"></i> Financials
+								</a>
+							</div>
+							<div class="accordion-body collapse" id="collapseSix">
+								<div class="accordion-inner">
+									<ul class="nav nav-list">
+										<li><a href="javascript:void(0)">Account Heads</a></li>
+										<li><a href="javascript:void(0)">AH Groups</a></li>
+                                        <li><a href="javascript:void(0)">Account Subheads</a></li>
+									</ul>
+                                    
+								</div>
+							</div>
+						</div>
+						
+
+                    </div>
+                    
+                 </div>
+                <div class="span10">
+
+                    <asp:ContentPlaceHolder id="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+                </div>
+          
+            </div>
+        <div class="row-fluid navbar" style="background-color:rgb(201,201,80);">
+              
+                 <center><p class="caption">Designed by   <a href="http://www.lssolutions.in" style="color:white;" target="_blank" title="Lokeswari Software Solutions">LSS Pvt. Ltd.</a> ISO 9001:2008 Certified Company</p> </center>
+              
+
+          </div>
+            </div>
+    </div>
+    </form>
+    <script src="../js/twitter-bootstrap-hover-dropdown.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.js-activated').dropdownHover().dropdown();
+        });
+  </script>
+</body>
+</html>

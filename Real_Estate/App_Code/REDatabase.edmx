@@ -1,0 +1,2780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="REDatabase.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="REDatabaseStoreContainer">
+          <EntitySet Name="aspnet_Applications" EntityType="REDatabase.Store.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Membership" EntityType="REDatabase.Store.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Paths" EntityType="REDatabase.Store.aspnet_Paths" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="REDatabase.Store.aspnet_PersonalizationAllUsers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="REDatabase.Store.aspnet_PersonalizationPerUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Profile" EntityType="REDatabase.Store.aspnet_Profile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Roles" EntityType="REDatabase.Store.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="REDatabase.Store.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Users" EntityType="REDatabase.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_UsersInRoles" EntityType="REDatabase.Store.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="REDatabase.Store.aspnet_WebEvent_Events" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_AboutUs" EntityType="REDatabase.Store.RE_AboutUs" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_AccountTypes" EntityType="REDatabase.Store.RE_AccountTypes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Addresses" EntityType="REDatabase.Store.RE_Addresses" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_AddressTypes" EntityType="REDatabase.Store.RE_AddressTypes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_AreaUnits" EntityType="REDatabase.Store.RE_AreaUnits" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Branches" EntityType="REDatabase.Store.RE_Branches" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Cadres" EntityType="REDatabase.Store.RE_Cadres" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_CompanyDetails" EntityType="REDatabase.Store.RE_CompanyDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_CompanyPackageSetup" EntityType="REDatabase.Store.RE_CompanyPackageSetup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_CompanyUserAccounts" EntityType="REDatabase.Store.RE_CompanyUserAccounts" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_ContactDetails" EntityType="REDatabase.Store.RE_ContactDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_ContactUs4Client" EntityType="REDatabase.Store.RE_ContactUs4Client" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_CustomerCadreAgents" EntityType="REDatabase.Store.RE_CustomerCadreAgents" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Customers" EntityType="REDatabase.Store.RE_Customers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Designations" EntityType="REDatabase.Store.RE_Designations" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_FinancialYears" EntityType="REDatabase.Store.RE_FinancialYears" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Gallerys" EntityType="REDatabase.Store.RE_Gallerys" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_LoginStatusDetails" EntityType="REDatabase.Store.RE_LoginStatusDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_MasterAgents" EntityType="REDatabase.Store.RE_MasterAgents" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_ModeOfTransactions" EntityType="REDatabase.Store.RE_ModeOfTransactions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_NewEvents" EntityType="REDatabase.Store.RE_NewEvents" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_PlotCategories" EntityType="REDatabase.Store.RE_PlotCategories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_PlotDimensions" EntityType="REDatabase.Store.RE_PlotDimensions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_ProjectTypes" EntityType="REDatabase.Store.RE_ProjectTypes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Properts4Clients" EntityType="REDatabase.Store.RE_Properts4Clients" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_PropertTypes" EntityType="REDatabase.Store.RE_PropertTypes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_SliderContents" EntityType="REDatabase.Store.RE_SliderContents" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Subscribers" EntityType="REDatabase.Store.RE_Subscribers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_TaxRates" EntityType="REDatabase.Store.RE_TaxRates" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Testimonials" EntityType="REDatabase.Store.RE_Testimonials" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_VentureAgents" EntityType="REDatabase.Store.RE_VentureAgents" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_VentureCadreAgents" EntityType="REDatabase.Store.RE_VentureCadreAgents" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_VenturePlotPricings" EntityType="REDatabase.Store.RE_VenturePlotPricings" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_VenturePlots" EntityType="REDatabase.Store.RE_VenturePlots" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_Ventures" EntityType="REDatabase.Store.RE_Ventures" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RE_VentureSchemes" EntityType="REDatabase.Store.RE_VentureSchemes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="REDatabase.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__6F1576F7" Association="REDatabase.Store.FK__aspnet_Me__Appli__6F1576F7">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__70099B30" Association="REDatabase.Store.FK__aspnet_Me__UserI__70099B30">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__70FDBF69" Association="REDatabase.Store.FK__aspnet_Pa__Appli__70FDBF69">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__71F1E3A2" Association="REDatabase.Store.FK__aspnet_Pe__PathI__71F1E3A2">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__72E607DB" Association="REDatabase.Store.FK__aspnet_Pe__PathI__72E607DB">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__73DA2C14" Association="REDatabase.Store.FK__aspnet_Pe__UserI__73DA2C14">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__74CE504D" Association="REDatabase.Store.FK__aspnet_Pr__UserI__74CE504D">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__75C27486" Association="REDatabase.Store.FK__aspnet_Ro__Appli__75C27486">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__76B698BF" Association="REDatabase.Store.FK__aspnet_Us__Appli__76B698BF">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__RoleI__77AABCF8" Association="REDatabase.Store.FK__aspnet_Us__RoleI__77AABCF8">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__UserI__789EE131" Association="REDatabase.Store.FK__aspnet_Us__UserI__789EE131">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Addresses_RE_AddressTypes" Association="REDatabase.Store.FK_RE_Addresses_RE_AddressTypes">
+            <End Role="RE_AddressTypes" EntitySet="RE_AddressTypes" />
+            <End Role="RE_Addresses" EntitySet="RE_Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_AddressTypes_RE_AddressTypes" Association="REDatabase.Store.FK_RE_AddressTypes_RE_AddressTypes">
+            <End Role="RE_AddressTypes" EntitySet="RE_AddressTypes" />
+            <End Role="RE_AddressTypes1" EntitySet="RE_AddressTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Branches_RE_Addresses" Association="REDatabase.Store.FK_RE_Branches_RE_Addresses">
+            <End Role="RE_Addresses" EntitySet="RE_Addresses" />
+            <End Role="RE_Branches" EntitySet="RE_Branches" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Branches_RE_ContactDetails" Association="REDatabase.Store.FK_RE_Branches_RE_ContactDetails">
+            <End Role="RE_ContactDetails" EntitySet="RE_ContactDetails" />
+            <End Role="RE_Branches" EntitySet="RE_Branches" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Cadres_RE_Ventures" Association="REDatabase.Store.FK_RE_Cadres_RE_Ventures">
+            <End Role="RE_Ventures" EntitySet="RE_Ventures" />
+            <End Role="RE_Cadres" EntitySet="RE_Cadres" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Properts4Clients_RE_Branches" Association="REDatabase.Store.FK_RE_Properts4Clients_RE_Branches">
+            <End Role="RE_Branches" EntitySet="RE_Branches" />
+            <End Role="RE_Properts4Clients" EntitySet="RE_Properts4Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Properts4Clients_RE_ProjectTypes" Association="REDatabase.Store.FK_RE_Properts4Clients_RE_ProjectTypes">
+            <End Role="RE_ProjectTypes" EntitySet="RE_ProjectTypes" />
+            <End Role="RE_Properts4Clients" EntitySet="RE_Properts4Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Properts4Clients_RE_PropertTypes" Association="REDatabase.Store.FK_RE_Properts4Clients_RE_PropertTypes">
+            <End Role="RE_PropertTypes" EntitySet="RE_PropertTypes" />
+            <End Role="RE_Properts4Clients" EntitySet="RE_Properts4Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Properts4Clients_RE_Ventures" Association="REDatabase.Store.FK_RE_Properts4Clients_RE_Ventures">
+            <End Role="RE_Ventures" EntitySet="RE_Ventures" />
+            <End Role="RE_Properts4Clients" EntitySet="RE_Properts4Clients" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordFormat" Type="int" Nullable="false" />
+          <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsApproved" Type="bit" Nullable="false" />
+          <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="ntext" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredPath" Type="nvarchar" Nullable="false" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PropertyNames" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesString" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesBinary" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_UsersInRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="char" Nullable="false" MaxLength="32" />
+          <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+          <Property Name="EventTime" Type="datetime" Nullable="false" />
+          <Property Name="EventType" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="EventSequence" Type="decimal" Nullable="false" Precision="19" />
+          <Property Name="EventOccurrence" Type="decimal" Nullable="false" Precision="19" />
+          <Property Name="EventCode" Type="int" Nullable="false" />
+          <Property Name="EventDetailCode" Type="int" Nullable="false" />
+          <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="MachineName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+          <Property Name="Details" Type="ntext" />
+        </EntityType>
+        <EntityType Name="RE_AboutUs">
+          <Key>
+            <PropertyRef Name="AboutId" />
+          </Key>
+          <Property Name="AboutId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="ThumbImageUrl" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="RE_AccountTypes">
+          <Key>
+            <PropertyRef Name="AccountTypeid" />
+          </Key>
+          <Property Name="AccountTypeid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AccountTypeDescription" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_Addresses">
+          <Key>
+            <PropertyRef Name="AddressId" />
+          </Key>
+          <Property Name="AddressId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AddressTypeId" Type="int" />
+          <Property Name="Street" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
+          <Property Name="State" Type="nvarchar" MaxLength="50" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" />
+          <Property Name="PinCode" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="RE_AddressTypes">
+          <Key>
+            <PropertyRef Name="AddressTypeId" />
+          </Key>
+          <Property Name="AddressTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AddressTypeName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_AreaUnits">
+          <Key>
+            <PropertyRef Name="PlotAreaUnitsID" />
+          </Key>
+          <Property Name="PlotAreaUnitsID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AreaFor" Type="nvarchar" MaxLength="10" />
+          <Property Name="AreaType" Type="nvarchar" MaxLength="50" />
+          <Property Name="AreaMeasurement" Type="smallint" />
+        </EntityType>
+        <EntityType Name="RE_Branches">
+          <Key>
+            <PropertyRef Name="BranchCode" />
+          </Key>
+          <Property Name="BranchCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BranchName" Type="nvarchar" MaxLength="50" />
+          <Property Name="BranchStartDate" Type="date" />
+          <Property Name="AddressId" Type="int" />
+          <Property Name="ContactId" Type="int" />
+          <Property Name="Status" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="RE_Cadres">
+          <Key>
+            <PropertyRef Name="CadreCode" />
+          </Key>
+          <Property Name="CadreCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="VentureID" Type="int" />
+          <Property Name="CadreName" Type="varchar" MaxLength="50" />
+          <Property Name="CadreValue" Type="varchar" MaxLength="50" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="RE_CompanyDetails">
+          <Key>
+            <PropertyRef Name="CompanyCode" />
+          </Key>
+          <Property Name="CompanyCode" Type="int" Nullable="false" />
+          <Property Name="ShortName" Type="nchar" MaxLength="10" />
+          <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddressId" Type="int" />
+          <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+          <Property Name="FaceBookUrl" Type="nvarchar" MaxLength="50" />
+          <Property Name="TwitterUrl" Type="nvarchar" MaxLength="50" />
+          <Property Name="YoutubeUrl" Type="nvarchar" MaxLength="50" />
+          <Property Name="GoogleUrl" Type="nvarchar" MaxLength="50" />
+          <Property Name="Footerimageurl" Type="nvarchar" MaxLength="100" />
+          <Property Name="Backgroundimageurl" Type="nvarchar" MaxLength="100" />
+          <Property Name="HomeVideoUrl" Type="nvarchar" MaxLength="50" />
+          <Property Name="WelcomeDescription" Type="nvarchar" MaxLength="500" />
+          <Property Name="CopyRight" Type="nvarchar" MaxLength="50" />
+          <Property Name="StyleColor" Type="nvarchar" MaxLength="50" />
+          <Property Name="PageTitle" Type="nvarchar" MaxLength="50" />
+          <Property Name="MetaKeywords" Type="nvarchar" MaxLength="250" />
+          <Property Name="MetaDescription" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="RE_CompanyPackageSetup">
+          <Key>
+            <PropertyRef Name="CompanyCode" />
+          </Key>
+          <Property Name="CompanyCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+          <Property Name="PackageStartDate" Type="date" />
+          <Property Name="PackageEndDate" Type="date" />
+          <Property Name="PackageTrailDate" Type="date" />
+          <Property Name="PackageContactAgreement" Type="nvarchar" MaxLength="50" />
+          <Property Name="PackageAgreementBrief" Type="nvarchar(max)" />
+          <Property Name="PackageDiscussionDetails" Type="nvarchar(max)" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastUpdatedDate" Type="date" />
+          <Property Name="AddressId" Type="int" />
+          <Property Name="ContactId" Type="int" />
+          <Property Name="WebSiteUrl" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="RE_CompanyUserAccounts">
+          <Key>
+            <PropertyRef Name="CompanyAccountId" />
+          </Key>
+          <Property Name="CompanyAccountId" Type="int" Nullable="false" />
+          <Property Name="CompanyCode" Type="nchar" MaxLength="10" />
+          <Property Name="UserTitle" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserDisplayName" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserRole" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_ContactDetails">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Name="ContactId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ContactName" Type="nvarchar" MaxLength="50" />
+          <Property Name="DesignationId" Type="int" />
+          <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+          <Property Name="EmailID" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="RE_ContactUs4Client">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Name="ContactId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="PhoneNo" Type="int" />
+          <Property Name="MobileNo" Type="nchar" MaxLength="10" />
+          <Property Name="EmailId" Type="nvarchar" MaxLength="100" />
+          <Property Name="Emailid2" Type="nvarchar" MaxLength="100" />
+          <Property Name="Address" Type="nvarchar" MaxLength="200" />
+          <Property Name="Address2" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="RE_CustomerCadreAgents">
+          <Key>
+            <PropertyRef Name="CustomerCadreAgentCode" />
+          </Key>
+          <Property Name="CustomerCadreAgentCode" Type="int" Nullable="false" />
+          <Property Name="PassBookNo" Type="int" />
+          <Property Name="VentureID" Type="int" />
+          <Property Name="AgentCode" Type="int" />
+          <Property Name="AgentCadre" Type="int" />
+        </EntityType>
+        <EntityType Name="RE_Customers">
+          <Key>
+            <PropertyRef Name="PassBookNo" />
+          </Key>
+          <Property Name="PassBookNo" Type="int" Nullable="false" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+          <Property Name="AliasName" Type="varchar" MaxLength="50" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+          <Property Name="RelationTitle" Type="varchar" MaxLength="50" />
+          <Property Name="RelationName" Type="varchar" MaxLength="50" />
+          <Property Name="Age" Type="varchar" MaxLength="50" />
+          <Property Name="DOB" Type="date" />
+          <Property Name="DOW" Type="date" />
+          <Property Name="Occupation" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="NomineeName" Type="varchar" MaxLength="50" />
+          <Property Name="NomineeTitle" Type="varchar" MaxLength="50" />
+          <Property Name="NomineeRelation" Type="varchar" MaxLength="50" />
+          <Property Name="NomineeDOB" Type="date" />
+          <Property Name="PermanentAddressId" Type="int" />
+          <Property Name="OfficeAddressId" Type="int" />
+          <Property Name="ResidenseAddressId" Type="int" />
+          <Property Name="ResidensePhonoNo" Type="varchar" MaxLength="50" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+          <Property Name="EmergencyContactNo" Type="varchar" MaxLength="50" />
+          <Property Name="EmailId" Type="varchar" MaxLength="50" />
+          <Property Name="SmsAlertStatus" Type="varchar" MaxLength="50" />
+          <Property Name="EmailAlertStatus" Type="varchar" MaxLength="50" />
+          <Property Name="PanNo" Type="varchar" MaxLength="50" />
+          <Property Name="imageUrl" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_Designations">
+          <Key>
+            <PropertyRef Name="DesignationId" />
+          </Key>
+          <Property Name="DesignationId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_FinancialYears">
+          <Key>
+            <PropertyRef Name="FinancialYearID" />
+          </Key>
+          <Property Name="FinancialYearID" Type="int" Nullable="false" />
+          <Property Name="FinancialYear" Type="date" />
+        </EntityType>
+        <EntityType Name="RE_Gallerys">
+          <Key>
+            <PropertyRef Name="GalleryId" />
+          </Key>
+          <Property Name="GalleryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="ThumbImageUrl" Type="nvarchar" MaxLength="100" />
+          <Property Name="LargeImageUrl" Type="nvarchar" MaxLength="150" />
+          <Property Name="GalleryType" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_LoginStatusDetails">
+          <Key>
+            <PropertyRef Name="LoginStatusID" />
+          </Key>
+          <Property Name="LoginStatusID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="30" />
+          <Property Name="LostLogin" Type="datetime" />
+          <Property Name="LostLout" Type="datetime" />
+          <Property Name="MachineName" Type="nvarchar" MaxLength="50" />
+          <Property Name="MachineIP" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_MasterAgents">
+          <Key>
+            <PropertyRef Name="AgentCode" />
+          </Key>
+          <Property Name="AgentCode" Type="int" Nullable="false" />
+          <Property Name="BranchCode" Type="int" />
+          <Property Name="AgentName" Type="varchar" MaxLength="50" />
+          <Property Name="AliasName" Type="varchar" MaxLength="50" />
+          <Property Name="JoinCadreCode" Type="varchar" MaxLength="50" />
+          <Property Name="PresentCadreCode" Type="varchar" MaxLength="50" />
+          <Property Name="JoinSeniorCode" Type="varchar" MaxLength="50" />
+          <Property Name="PresentSeniorCode" Type="varchar" MaxLength="50" />
+          <Property Name="Hiredate" Type="date" />
+          <Property Name="Age" Type="varchar" MaxLength="50" />
+          <Property Name="DOB" Type="date" />
+          <Property Name="DOW" Type="date" />
+          <Property Name="PanNo" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="PermanentAddressId" Type="int" />
+          <Property Name="CurrentAddressId" Type="int" />
+          <Property Name="ResidensePhonoNo" Type="varchar" MaxLength="50" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+          <Property Name="EmergencyContactNo" Type="varchar" MaxLength="50" />
+          <Property Name="EmailId" Type="nvarchar" MaxLength="50" />
+          <Property Name="TaxRate" Type="nvarchar" MaxLength="50" />
+          <Property Name="TaxEffectiveFrom" Type="varchar" MaxLength="50" />
+          <Property Name="OldTaxRate" Type="varchar" MaxLength="50" />
+          <Property Name="ApplicationScanImage" Type="varchar" MaxLength="50" />
+          <Property Name="PhotoScanImage" Type="varchar" MaxLength="50" />
+          <Property Name="IdProofImage" Type="varchar" MaxLength="50" />
+          <Property Name="FingerPrintImage" Type="varchar" MaxLength="50" />
+          <Property Name="IdCardNo" Type="varchar" MaxLength="50" />
+          <Property Name="BloodGroup" Type="varchar" MaxLength="50" />
+          <Property Name="imageUrl" Type="varchar" MaxLength="50" />
+          <Property Name="Remarks" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="RE_ModeOfTransactions">
+          <Key>
+            <PropertyRef Name="ModeOfTransactionId" />
+          </Key>
+          <Property Name="ModeOfTransactionId" Type="nvarchar" Nullable="false" MaxLength="5" />
+          <Property Name="ModeOfTransactionDiscription" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="RE_NewEvents">
+          <Key>
+            <PropertyRef Name="NewsId" />
+          </Key>
+          <Property Name="NewsId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="nvarchar" MaxLength="100" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="100" />
+          <Property Name="NewsMessgae" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="RE_PlotCategories">
+          <Key>
+            <PropertyRef Name="PlotCategoryID" />
+          </Key>
+          <Property Name="PlotCategoryID" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="RE_PlotDimensions">
+          <Key>
+            <PropertyRef Name="PlotDimensionId" />
+          </Key>
+          <Property Name="PlotDimensionId" Type="int" Nullable="false" />
+          <Property Name="VenturePlotId" Type="int" />
+          <Property Name="PlotArea" Type="nchar" MaxLength="10" />
+          <Property Name="NorthWidth" Type="nvarchar" MaxLength="50" />
+          <Property Name="SouthWidth" Type="nvarchar" MaxLength="50" />
+          <Property Name="EastWidth" Type="nvarchar" MaxLength="50" />
+          <Property Name="WestWidth" Type="nvarchar" MaxLength="50" />
+          <Property Name="NorthFacing" Type="nvarchar" MaxLength="50" />
+          <Property Name="SouthFacing" Type="nvarchar" MaxLength="50" />
+          <Property Name="EastFacing" Type="nvarchar" MaxLength="50" />
+          <Property Name="WestFacing" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_ProjectTypes">
+          <Key>
+            <PropertyRef Name="ProjectTypeId" />
+          </Key>
+          <Property Name="ProjectTypeId" Type="int" Nullable="false" />
+          <Property Name="ProjectName" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="RE_Properts4Clients">
+          <Key>
+            <PropertyRef Name="PropId" />
+          </Key>
+          <Property Name="PropId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyTypeId" Type="int" />
+          <Property Name="ProjectTypeId" Type="int" />
+          <Property Name="VentureId" Type="int" />
+          <Property Name="BranchCode" Type="int" />
+          <Property Name="Propame" Type="nvarchar" MaxLength="100" />
+          <Property Name="ThumbImageUrl" Type="nvarchar" MaxLength="150" />
+          <Property Name="LargeImageUrl" Type="nvarchar" MaxLength="500" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Location" Type="nvarchar" MaxLength="50" />
+          <Property Name="Features" Type="nvarchar" MaxLength="500" />
+          <Property Name="MapUrl" Type="nvarchar" MaxLength="200" />
+          <Property Name="State" Type="nvarchar" MaxLength="50" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" />
+          <Property Name="Price" Type="int" />
+          <Property Name="Rateperyqft" Type="int" />
+          <Property Name="Area" Type="nvarchar" MaxLength="50" />
+          <Property Name="DownloadBro" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_PropertTypes">
+          <Key>
+            <PropertyRef Name="PropertyTypeId" />
+          </Key>
+          <Property Name="PropertyTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PropFor" Type="nvarchar" MaxLength="100" />
+          <Property Name="PropType" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="RE_SliderContents">
+          <Key>
+            <PropertyRef Name="SliderId" />
+          </Key>
+          <Property Name="SliderId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="nvarchar" MaxLength="200" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
+          <Property Name="Caption" Type="nvarchar" MaxLength="200" />
+          <Property Name="NavUrl" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="RE_Subscribers">
+          <Key>
+            <PropertyRef Name="SubscriberId" />
+          </Key>
+          <Property Name="SubscriberId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SubscriberName" Type="nvarchar" MaxLength="100" />
+          <Property Name="RegistratedDate" Type="date" />
+          <Property Name="EmailId" Type="varchar" MaxLength="100" />
+          <Property Name="Status" Type="bit" />
+        </EntityType>
+        <EntityType Name="RE_TaxRates">
+          <Key>
+            <PropertyRef Name="TaxID" />
+          </Key>
+          <Property Name="TaxID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Section" Type="nvarchar" MaxLength="10" />
+          <Property Name="TaxRate1" Type="float" />
+          <Property Name="IT" Type="float" />
+          <Property Name="SC" Type="float" />
+          <Property Name="EC" Type="float" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="ToDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="RE_Testimonials">
+          <Key>
+            <PropertyRef Name="TestimonialId" />
+          </Key>
+          <Property Name="TestimonialId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="200" />
+          <Property Name="ThumbImageUrl" Type="nvarchar" MaxLength="100" />
+          <Property Name="PostedDate" Type="date" />
+          <Property Name="Status" Type="bit" />
+        </EntityType>
+        <EntityType Name="RE_VentureAgents">
+          <Key>
+            <PropertyRef Name="VentureAgentId" />
+          </Key>
+          <Property Name="VentureAgentId" Type="int" Nullable="false" />
+          <Property Name="VentureID" Type="int" />
+          <Property Name="AgentCode" Type="int" />
+          <Property Name="TeamNo" Type="varchar" MaxLength="50" />
+          <Property Name="ManagerCode" Type="int" />
+          <Property Name="CadreCode" Type="int" />
+          <Property Name="CadreDate" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="CommissionOffer" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_VentureCadreAgents">
+          <Key>
+            <PropertyRef Name="VentureCadreAgentID" />
+          </Key>
+          <Property Name="VentureCadreAgentID" Type="int" Nullable="false" />
+          <Property Name="VentureID" Type="int" />
+          <Property Name="AgentCode" Type="int" />
+          <Property Name="TeamNo" Type="varchar" MaxLength="50" />
+          <Property Name="CadreCode" Type="int" />
+          <Property Name="ManagerCode" Type="varchar" MaxLength="50" />
+          <Property Name="CadreDate" Type="varchar" MaxLength="50" />
+          <Property Name="CommissionOffer" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RE_VenturePlotPricings">
+          <Key>
+            <PropertyRef Name="PlotPriceId" />
+          </Key>
+          <Property Name="PlotPriceId" Type="int" Nullable="false" />
+          <Property Name="PricePerPlotAreaUnit" Type="bigint" />
+          <Property Name="ExtraCornerPrice" Type="bigint" />
+          <Property Name="CommercialPrice" Type="bigint" />
+          <Property Name="ExtraPremiumPrice" Type="bigint" />
+          <Property Name="ExtraFacingPrice" Type="bigint" />
+          <Property Name="ExtraAmenitiesPrice" Type="bigint" />
+          <Property Name="MainRoodFacingPrice" Type="bigint" />
+          <Property Name="InnerRoadFacingPrice" Type="bigint" />
+          <Property Name="BasicPrice" Type="bigint" />
+        </EntityType>
+        <EntityType Name="RE_VenturePlots">
+          <Key>
+            <PropertyRef Name="VenturePlotId" />
+          </Key>
+          <Property Name="VenturePlotId" Type="int" Nullable="false" />
+          <Property Name="VentureId" Type="int" />
+          <Property Name="PlotNo" Type="nchar" MaxLength="10" />
+          <Property Name="PlotCategoryId" Type="int" />
+          <Property Name="PlotPriceId" Type="int" />
+          <Property Name="PlotDimensionId" Type="int" />
+          <Property Name="AdmissionFee" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="RE_Ventures">
+          <Key>
+            <PropertyRef Name="VentureID" />
+          </Key>
+          <Property Name="VentureID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BranchId" Type="int" />
+          <Property Name="VentureName" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddressId" Type="int" />
+          <Property Name="VentureStartDate" Type="date" />
+          <Property Name="PlotsCount" Type="int" />
+          <Property Name="LandAreaUnitId" Type="int" />
+          <Property Name="MainRoodWidth" Type="nchar" MaxLength="10" />
+          <Property Name="InnerRoodWidth" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="RE_VentureSchemes">
+          <Key>
+            <PropertyRef Name="SchemeId" />
+          </Key>
+          <Property Name="SchemeId" Type="int" Nullable="false" />
+          <Property Name="VentureId" Type="int" />
+          <Property Name="SchemeType" Type="nchar" MaxLength="10" />
+          <Property Name="SchemeStartDate" Type="date" />
+          <Property Name="SchemeEndDate" Type="date" />
+          <Property Name="PricePerPlotAreaUnit" Type="varchar" MaxLength="50" />
+          <Property Name="AgentPricePerUnit" Type="varchar" MaxLength="50" />
+          <Property Name="IntialAmount" Type="varchar" MaxLength="50" />
+          <Property Name="PlotReservationAmount" Type="varchar" MaxLength="50" />
+          <Property Name="Period" Type="varchar" MaxLength="50" />
+          <Property Name="EMI" Type="varchar" MaxLength="50" />
+          <Property Name="SpecialInstallmentGaps" Type="varchar" MaxLength="50" />
+          <Property Name="SpecialInstallmentAmount" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__6F1576F7">
+          <End Role="aspnet_Applications" Type="REDatabase.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="REDatabase.Store.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__70099B30">
+          <End Role="aspnet_Users" Type="REDatabase.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="REDatabase.Store.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__70FDBF69">
+          <End Role="aspnet_Applications" Type="REDatabase.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="REDatabase.Store.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__71F1E3A2">
+          <End Role="aspnet_Paths" Type="REDatabase.Store.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="REDatabase.Store.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__72E607DB">
+          <End Role="aspnet_Paths" Type="REDatabase.Store.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="REDatabase.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__73DA2C14">
+          <End Role="aspnet_Users" Type="REDatabase.Store.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="REDatabase.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__74CE504D">
+          <End Role="aspnet_Users" Type="REDatabase.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="REDatabase.Store.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__75C27486">
+          <End Role="aspnet_Applications" Type="REDatabase.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="REDatabase.Store.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__76B698BF">
+          <End Role="aspnet_Applications" Type="REDatabase.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="REDatabase.Store.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__RoleI__77AABCF8">
+          <End Role="aspnet_Roles" Type="REDatabase.Store.aspnet_Roles" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="REDatabase.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__UserI__789EE131">
+          <End Role="aspnet_Users" Type="REDatabase.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="REDatabase.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Addresses_RE_AddressTypes">
+          <End Role="RE_AddressTypes" Type="REDatabase.Store.RE_AddressTypes" Multiplicity="0..1" />
+          <End Role="RE_Addresses" Type="REDatabase.Store.RE_Addresses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_AddressTypes">
+              <PropertyRef Name="AddressTypeId" />
+            </Principal>
+            <Dependent Role="RE_Addresses">
+              <PropertyRef Name="AddressTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_AddressTypes_RE_AddressTypes">
+          <End Role="RE_AddressTypes" Type="REDatabase.Store.RE_AddressTypes" Multiplicity="1" />
+          <End Role="RE_AddressTypes1" Type="REDatabase.Store.RE_AddressTypes" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="RE_AddressTypes">
+              <PropertyRef Name="AddressTypeId" />
+            </Principal>
+            <Dependent Role="RE_AddressTypes1">
+              <PropertyRef Name="AddressTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Branches_RE_Addresses">
+          <End Role="RE_Addresses" Type="REDatabase.Store.RE_Addresses" Multiplicity="0..1" />
+          <End Role="RE_Branches" Type="REDatabase.Store.RE_Branches" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_Addresses">
+              <PropertyRef Name="AddressId" />
+            </Principal>
+            <Dependent Role="RE_Branches">
+              <PropertyRef Name="AddressId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Branches_RE_ContactDetails">
+          <End Role="RE_ContactDetails" Type="REDatabase.Store.RE_ContactDetails" Multiplicity="0..1" />
+          <End Role="RE_Branches" Type="REDatabase.Store.RE_Branches" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_ContactDetails">
+              <PropertyRef Name="ContactId" />
+            </Principal>
+            <Dependent Role="RE_Branches">
+              <PropertyRef Name="ContactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Cadres_RE_Ventures">
+          <End Role="RE_Ventures" Type="REDatabase.Store.RE_Ventures" Multiplicity="0..1" />
+          <End Role="RE_Cadres" Type="REDatabase.Store.RE_Cadres" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_Ventures">
+              <PropertyRef Name="VentureID" />
+            </Principal>
+            <Dependent Role="RE_Cadres">
+              <PropertyRef Name="VentureID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Properts4Clients_RE_Branches">
+          <End Role="RE_Branches" Type="REDatabase.Store.RE_Branches" Multiplicity="0..1" />
+          <End Role="RE_Properts4Clients" Type="REDatabase.Store.RE_Properts4Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_Branches">
+              <PropertyRef Name="BranchCode" />
+            </Principal>
+            <Dependent Role="RE_Properts4Clients">
+              <PropertyRef Name="BranchCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Properts4Clients_RE_ProjectTypes">
+          <End Role="RE_ProjectTypes" Type="REDatabase.Store.RE_ProjectTypes" Multiplicity="0..1" />
+          <End Role="RE_Properts4Clients" Type="REDatabase.Store.RE_Properts4Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_ProjectTypes">
+              <PropertyRef Name="ProjectTypeId" />
+            </Principal>
+            <Dependent Role="RE_Properts4Clients">
+              <PropertyRef Name="ProjectTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Properts4Clients_RE_PropertTypes">
+          <End Role="RE_PropertTypes" Type="REDatabase.Store.RE_PropertTypes" Multiplicity="0..1" />
+          <End Role="RE_Properts4Clients" Type="REDatabase.Store.RE_Properts4Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_PropertTypes">
+              <PropertyRef Name="PropertyTypeId" />
+            </Principal>
+            <Dependent Role="RE_Properts4Clients">
+              <PropertyRef Name="PropertyTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Properts4Clients_RE_Ventures">
+          <End Role="RE_Ventures" Type="REDatabase.Store.RE_Ventures" Multiplicity="0..1" />
+          <End Role="RE_Properts4Clients" Type="REDatabase.Store.RE_Properts4Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_Ventures">
+              <PropertyRef Name="VentureID" />
+            </Principal>
+            <Dependent Role="RE_Properts4Clients">
+              <PropertyRef Name="VentureId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="REDatabase" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DB_30288_testdbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="aspnet_Applications" EntityType="REDatabase.aspnet_Applications" />
+          <EntitySet Name="aspnet_Membership" EntityType="REDatabase.aspnet_Membership" />
+          <EntitySet Name="aspnet_Paths" EntityType="REDatabase.aspnet_Paths" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="REDatabase.aspnet_PersonalizationAllUsers" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="REDatabase.aspnet_PersonalizationPerUser" />
+          <EntitySet Name="aspnet_Profile" EntityType="REDatabase.aspnet_Profile" />
+          <EntitySet Name="aspnet_Roles" EntityType="REDatabase.aspnet_Roles" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="REDatabase.aspnet_SchemaVersions" />
+          <EntitySet Name="aspnet_Users" EntityType="REDatabase.aspnet_Users" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="REDatabase.aspnet_WebEvent_Events" />
+          <EntitySet Name="RE_AboutUs" EntityType="REDatabase.RE_AboutUs" />
+          <EntitySet Name="RE_AccountTypes" EntityType="REDatabase.RE_AccountTypes" />
+          <EntitySet Name="RE_Addresses" EntityType="REDatabase.RE_Addresses" />
+          <EntitySet Name="RE_AddressTypes" EntityType="REDatabase.RE_AddressTypes" />
+          <EntitySet Name="RE_AreaUnits" EntityType="REDatabase.RE_AreaUnits" />
+          <EntitySet Name="RE_Branches" EntityType="REDatabase.RE_Branches" />
+          <EntitySet Name="RE_Cadres" EntityType="REDatabase.RE_Cadres" />
+          <EntitySet Name="RE_CompanyDetails" EntityType="REDatabase.RE_CompanyDetails" />
+          <EntitySet Name="RE_CompanyPackageSetup" EntityType="REDatabase.RE_CompanyPackageSetup" />
+          <EntitySet Name="RE_CompanyUserAccounts" EntityType="REDatabase.RE_CompanyUserAccounts" />
+          <EntitySet Name="RE_ContactDetails" EntityType="REDatabase.RE_ContactDetails" />
+          <EntitySet Name="RE_ContactUs4Client" EntityType="REDatabase.RE_ContactUs4Client" />
+          <EntitySet Name="RE_CustomerCadreAgents" EntityType="REDatabase.RE_CustomerCadreAgents" />
+          <EntitySet Name="RE_Customers" EntityType="REDatabase.RE_Customers" />
+          <EntitySet Name="RE_Designations" EntityType="REDatabase.RE_Designations" />
+          <EntitySet Name="RE_FinancialYears" EntityType="REDatabase.RE_FinancialYears" />
+          <EntitySet Name="RE_Gallerys" EntityType="REDatabase.RE_Gallerys" />
+          <EntitySet Name="RE_LoginStatusDetails" EntityType="REDatabase.RE_LoginStatusDetails" />
+          <EntitySet Name="RE_MasterAgents" EntityType="REDatabase.RE_MasterAgents" />
+          <EntitySet Name="RE_ModeOfTransactions" EntityType="REDatabase.RE_ModeOfTransactions" />
+          <EntitySet Name="RE_NewEvents" EntityType="REDatabase.RE_NewEvents" />
+          <EntitySet Name="RE_PlotCategories" EntityType="REDatabase.RE_PlotCategories" />
+          <EntitySet Name="RE_PlotDimensions" EntityType="REDatabase.RE_PlotDimensions" />
+          <EntitySet Name="RE_ProjectTypes" EntityType="REDatabase.RE_ProjectTypes" />
+          <EntitySet Name="RE_Properts4Clients" EntityType="REDatabase.RE_Properts4Clients" />
+          <EntitySet Name="RE_PropertTypes" EntityType="REDatabase.RE_PropertTypes" />
+          <EntitySet Name="RE_SliderContents" EntityType="REDatabase.RE_SliderContents" />
+          <EntitySet Name="RE_Subscribers" EntityType="REDatabase.RE_Subscribers" />
+          <EntitySet Name="RE_TaxRates" EntityType="REDatabase.RE_TaxRates" />
+          <EntitySet Name="RE_Testimonials" EntityType="REDatabase.RE_Testimonials" />
+          <EntitySet Name="RE_VentureAgents" EntityType="REDatabase.RE_VentureAgents" />
+          <EntitySet Name="RE_VentureCadreAgents" EntityType="REDatabase.RE_VentureCadreAgents" />
+          <EntitySet Name="RE_VenturePlotPricings" EntityType="REDatabase.RE_VenturePlotPricings" />
+          <EntitySet Name="RE_VenturePlots" EntityType="REDatabase.RE_VenturePlots" />
+          <EntitySet Name="RE_Ventures" EntityType="REDatabase.RE_Ventures" />
+          <EntitySet Name="RE_VentureSchemes" EntityType="REDatabase.RE_VentureSchemes" />
+          <EntitySet Name="sysdiagrams" EntityType="REDatabase.sysdiagram" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__6F1576F7" Association="REDatabase.FK__aspnet_Me__Appli__6F1576F7">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__70FDBF69" Association="REDatabase.FK__aspnet_Pa__Appli__70FDBF69">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__75C27486" Association="REDatabase.FK__aspnet_Ro__Appli__75C27486">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__76B698BF" Association="REDatabase.FK__aspnet_Us__Appli__76B698BF">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__70099B30" Association="REDatabase.FK__aspnet_Me__UserI__70099B30">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__71F1E3A2" Association="REDatabase.FK__aspnet_Pe__PathI__71F1E3A2">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__72E607DB" Association="REDatabase.FK__aspnet_Pe__PathI__72E607DB">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__73DA2C14" Association="REDatabase.FK__aspnet_Pe__UserI__73DA2C14">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__74CE504D" Association="REDatabase.FK__aspnet_Pr__UserI__74CE504D">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Addresses_RE_AddressTypes" Association="REDatabase.FK_RE_Addresses_RE_AddressTypes">
+            <End Role="RE_AddressTypes" EntitySet="RE_AddressTypes" />
+            <End Role="RE_Addresses" EntitySet="RE_Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Branches_RE_Addresses" Association="REDatabase.FK_RE_Branches_RE_Addresses">
+            <End Role="RE_Addresses" EntitySet="RE_Addresses" />
+            <End Role="RE_Branches" EntitySet="RE_Branches" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_AddressTypes_RE_AddressTypes" Association="REDatabase.FK_RE_AddressTypes_RE_AddressTypes">
+            <End Role="RE_AddressTypes" EntitySet="RE_AddressTypes" />
+            <End Role="RE_AddressTypes1" EntitySet="RE_AddressTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Branches_RE_ContactDetails" Association="REDatabase.FK_RE_Branches_RE_ContactDetails">
+            <End Role="RE_ContactDetails" EntitySet="RE_ContactDetails" />
+            <End Role="RE_Branches" EntitySet="RE_Branches" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Properts4Clients_RE_Branches" Association="REDatabase.FK_RE_Properts4Clients_RE_Branches">
+            <End Role="RE_Branches" EntitySet="RE_Branches" />
+            <End Role="RE_Properts4Clients" EntitySet="RE_Properts4Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Cadres_RE_Ventures" Association="REDatabase.FK_RE_Cadres_RE_Ventures">
+            <End Role="RE_Ventures" EntitySet="RE_Ventures" />
+            <End Role="RE_Cadres" EntitySet="RE_Cadres" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Properts4Clients_RE_ProjectTypes" Association="REDatabase.FK_RE_Properts4Clients_RE_ProjectTypes">
+            <End Role="RE_ProjectTypes" EntitySet="RE_ProjectTypes" />
+            <End Role="RE_Properts4Clients" EntitySet="RE_Properts4Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Properts4Clients_RE_PropertTypes" Association="REDatabase.FK_RE_Properts4Clients_RE_PropertTypes">
+            <End Role="RE_PropertTypes" EntitySet="RE_PropertTypes" />
+            <End Role="RE_Properts4Clients" EntitySet="RE_Properts4Clients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RE_Properts4Clients_RE_Ventures" Association="REDatabase.FK_RE_Properts4Clients_RE_Ventures">
+            <End Role="RE_Ventures" EntitySet="RE_Ventures" />
+            <End Role="RE_Properts4Clients" EntitySet="RE_Properts4Clients" />
+          </AssociationSet>
+          <AssociationSet Name="aspnet_UsersInRoles" Association="REDatabase.aspnet_UsersInRoles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="REDatabase.FK__aspnet_Me__Appli__6F1576F7" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="REDatabase.FK__aspnet_Pa__Appli__70FDBF69" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="REDatabase.FK__aspnet_Ro__Appli__75C27486" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+          <NavigationProperty Name="aspnet_Users" Relationship="REDatabase.FK__aspnet_Us__Appli__76B698BF" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+          <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+          <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" />
+          <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="REDatabase.FK__aspnet_Me__Appli__6F1576F7" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="REDatabase.FK__aspnet_Me__UserI__70099B30" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="Path" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredPath" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="REDatabase.FK__aspnet_Pa__Appli__70FDBF69" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="REDatabase.FK__aspnet_Pe__PathI__71F1E3A2" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="REDatabase.FK__aspnet_Pe__PathI__72E607DB" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="REDatabase.FK__aspnet_Pe__PathI__71F1E3A2" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="REDatabase.FK__aspnet_Pe__PathI__72E607DB" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Users" Relationship="REDatabase.FK__aspnet_Pe__UserI__73DA2C14" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="PropertyNames" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PropertyValuesString" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PropertyValuesBinary" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="aspnet_Users" Relationship="REDatabase.FK__aspnet_Pr__UserI__74CE504D" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="RoleId" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="REDatabase.FK__aspnet_Ro__Appli__75C27486" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="REDatabase.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="REDatabase.FK__aspnet_Us__Appli__76B698BF" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="REDatabase.FK__aspnet_Me__UserI__70099B30" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="REDatabase.FK__aspnet_Pe__UserI__73DA2C14" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+          <NavigationProperty Name="aspnet_Profile" Relationship="REDatabase.FK__aspnet_Pr__UserI__74CE504D" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="REDatabase.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="true" />
+          <Property Name="EventTimeUtc" Type="DateTime" Nullable="false" />
+          <Property Name="EventTime" Type="DateTime" Nullable="false" />
+          <Property Name="EventType" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="EventSequence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+          <Property Name="EventOccurrence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+          <Property Name="EventCode" Type="Int32" Nullable="false" />
+          <Property Name="EventDetailCode" Type="Int32" Nullable="false" />
+          <Property Name="Message" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationVirtualPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="RequestUrl" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="ExceptionType" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Details" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_AboutUs">
+          <Key>
+            <PropertyRef Name="AboutId" />
+          </Key>
+          <Property Name="AboutId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ThumbImageUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_AccountTypes">
+          <Key>
+            <PropertyRef Name="AccountTypeid" />
+          </Key>
+          <Property Name="AccountTypeid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountTypeDescription" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_Addresses">
+          <Key>
+            <PropertyRef Name="AddressId" />
+          </Key>
+          <Property Name="AddressId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AddressTypeId" Type="Int32" />
+          <Property Name="Street" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Country" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PinCode" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="RE_AddressTypes" Relationship="REDatabase.FK_RE_Addresses_RE_AddressTypes" FromRole="RE_Addresses" ToRole="RE_AddressTypes" />
+          <NavigationProperty Name="RE_Branches" Relationship="REDatabase.FK_RE_Branches_RE_Addresses" FromRole="RE_Addresses" ToRole="RE_Branches" />
+        </EntityType>
+        <EntityType Name="RE_AddressTypes">
+          <Key>
+            <PropertyRef Name="AddressTypeId" />
+          </Key>
+          <Property Name="AddressTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AddressTypeName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="RE_Addresses" Relationship="REDatabase.FK_RE_Addresses_RE_AddressTypes" FromRole="RE_AddressTypes" ToRole="RE_Addresses" />
+          <NavigationProperty Name="RE_AddressTypes1" Relationship="REDatabase.FK_RE_AddressTypes_RE_AddressTypes" FromRole="RE_AddressTypes" ToRole="RE_AddressTypes1" />
+          <NavigationProperty Name="RE_AddressTypes2" Relationship="REDatabase.FK_RE_AddressTypes_RE_AddressTypes" FromRole="RE_AddressTypes1" ToRole="RE_AddressTypes" />
+        </EntityType>
+        <EntityType Name="RE_AreaUnits">
+          <Key>
+            <PropertyRef Name="PlotAreaUnitsID" />
+          </Key>
+          <Property Name="PlotAreaUnitsID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AreaFor" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="AreaType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="AreaMeasurement" Type="Int16" />
+        </EntityType>
+        <EntityType Name="RE_Branches">
+          <Key>
+            <PropertyRef Name="BranchCode" />
+          </Key>
+          <Property Name="BranchCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BranchName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="BranchStartDate" Type="DateTime" />
+          <Property Name="AddressId" Type="Int32" />
+          <Property Name="ContactId" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="RE_Addresses" Relationship="REDatabase.FK_RE_Branches_RE_Addresses" FromRole="RE_Branches" ToRole="RE_Addresses" />
+          <NavigationProperty Name="RE_ContactDetails" Relationship="REDatabase.FK_RE_Branches_RE_ContactDetails" FromRole="RE_Branches" ToRole="RE_ContactDetails" />
+          <NavigationProperty Name="RE_Properts4Clients" Relationship="REDatabase.FK_RE_Properts4Clients_RE_Branches" FromRole="RE_Branches" ToRole="RE_Properts4Clients" />
+        </EntityType>
+        <EntityType Name="RE_Cadres">
+          <Key>
+            <PropertyRef Name="CadreCode" />
+          </Key>
+          <Property Name="CadreCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VentureID" Type="Int32" />
+          <Property Name="CadreName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CadreValue" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="RE_Ventures" Relationship="REDatabase.FK_RE_Cadres_RE_Ventures" FromRole="RE_Cadres" ToRole="RE_Ventures" />
+        </EntityType>
+        <EntityType Name="RE_CompanyDetails">
+          <Key>
+            <PropertyRef Name="CompanyCode" />
+          </Key>
+          <Property Name="CompanyCode" Type="Int32" Nullable="false" />
+          <Property Name="ShortName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="LogoUrl" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="AddressId" Type="Int32" />
+          <Property Name="PhoneNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MobileNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FaceBookUrl" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TwitterUrl" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="YoutubeUrl" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="GoogleUrl" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Footerimageurl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Backgroundimageurl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="HomeVideoUrl" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="WelcomeDescription" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="CopyRight" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="StyleColor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PageTitle" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="MetaKeywords" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="MetaDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_CompanyPackageSetup">
+          <Key>
+            <PropertyRef Name="CompanyCode" />
+          </Key>
+          <Property Name="CompanyCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PackageStartDate" Type="DateTime" />
+          <Property Name="PackageEndDate" Type="DateTime" />
+          <Property Name="PackageTrailDate" Type="DateTime" />
+          <Property Name="PackageContactAgreement" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PackageAgreementBrief" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PackageDiscussionDetails" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastUpdatedDate" Type="DateTime" />
+          <Property Name="AddressId" Type="Int32" />
+          <Property Name="ContactId" Type="Int32" />
+          <Property Name="WebSiteUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_CompanyUserAccounts">
+          <Key>
+            <PropertyRef Name="CompanyAccountId" />
+          </Key>
+          <Property Name="CompanyAccountId" Type="Int32" Nullable="false" />
+          <Property Name="CompanyCode" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="UserTitle" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="UserDisplayName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="UserRole" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_ContactDetails">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Name="ContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ContactName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DesignationId" Type="Int32" />
+          <Property Name="PhoneNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MobileNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmailID" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="RE_Branches" Relationship="REDatabase.FK_RE_Branches_RE_ContactDetails" FromRole="RE_ContactDetails" ToRole="RE_Branches" />
+        </EntityType>
+        <EntityType Name="RE_ContactUs4Client">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Name="ContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PhoneNo" Type="Int32" />
+          <Property Name="MobileNo" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="EmailId" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Emailid2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Address2" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_CustomerCadreAgents">
+          <Key>
+            <PropertyRef Name="CustomerCadreAgentCode" />
+          </Key>
+          <Property Name="CustomerCadreAgentCode" Type="Int32" Nullable="false" />
+          <Property Name="PassBookNo" Type="Int32" />
+          <Property Name="VentureID" Type="Int32" />
+          <Property Name="AgentCode" Type="Int32" />
+          <Property Name="AgentCadre" Type="Int32" />
+        </EntityType>
+        <EntityType Name="RE_Customers">
+          <Key>
+            <PropertyRef Name="PassBookNo" />
+          </Key>
+          <Property Name="PassBookNo" Type="Int32" Nullable="false" />
+          <Property Name="CustomerName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="AliasName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RelationTitle" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RelationName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Age" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DOB" Type="DateTime" />
+          <Property Name="DOW" Type="DateTime" />
+          <Property Name="Occupation" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NomineeName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NomineeTitle" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NomineeRelation" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NomineeDOB" Type="DateTime" />
+          <Property Name="PermanentAddressId" Type="Int32" />
+          <Property Name="OfficeAddressId" Type="Int32" />
+          <Property Name="ResidenseAddressId" Type="Int32" />
+          <Property Name="ResidensePhonoNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MobileNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmergencyContactNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmailId" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SmsAlertStatus" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmailAlertStatus" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PanNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="imageUrl" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_Designations">
+          <Key>
+            <PropertyRef Name="DesignationId" />
+          </Key>
+          <Property Name="DesignationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_FinancialYears">
+          <Key>
+            <PropertyRef Name="FinancialYearID" />
+          </Key>
+          <Property Name="FinancialYearID" Type="Int32" Nullable="false" />
+          <Property Name="FinancialYear" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="RE_Gallerys">
+          <Key>
+            <PropertyRef Name="GalleryId" />
+          </Key>
+          <Property Name="GalleryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ThumbImageUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="LargeImageUrl" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="GalleryType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_LoginStatusDetails">
+          <Key>
+            <PropertyRef Name="LoginStatusID" />
+          </Key>
+          <Property Name="LoginStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="LostLogin" Type="DateTime" />
+          <Property Name="LostLout" Type="DateTime" />
+          <Property Name="MachineName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="MachineIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_MasterAgents">
+          <Key>
+            <PropertyRef Name="AgentCode" />
+          </Key>
+          <Property Name="AgentCode" Type="Int32" Nullable="false" />
+          <Property Name="BranchCode" Type="Int32" />
+          <Property Name="AgentName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="AliasName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="JoinCadreCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PresentCadreCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="JoinSeniorCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PresentSeniorCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Hiredate" Type="DateTime" />
+          <Property Name="Age" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DOB" Type="DateTime" />
+          <Property Name="DOW" Type="DateTime" />
+          <Property Name="PanNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PermanentAddressId" Type="Int32" />
+          <Property Name="CurrentAddressId" Type="Int32" />
+          <Property Name="ResidensePhonoNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MobileNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmergencyContactNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmailId" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TaxRate" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TaxEffectiveFrom" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="OldTaxRate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ApplicationScanImage" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PhotoScanImage" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IdProofImage" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FingerPrintImage" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IdCardNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="BloodGroup" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="imageUrl" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_ModeOfTransactions">
+          <Key>
+            <PropertyRef Name="ModeOfTransactionId" />
+          </Key>
+          <Property Name="ModeOfTransactionId" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="ModeOfTransactionDiscription" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_NewEvents">
+          <Key>
+            <PropertyRef Name="NewsId" />
+          </Key>
+          <Property Name="NewsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Subject" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NewsMessgae" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_PlotCategories">
+          <Key>
+            <PropertyRef Name="PlotCategoryID" />
+          </Key>
+          <Property Name="PlotCategoryID" Type="Int32" Nullable="false" />
+          <Property Name="CategoryName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_PlotDimensions">
+          <Key>
+            <PropertyRef Name="PlotDimensionId" />
+          </Key>
+          <Property Name="PlotDimensionId" Type="Int32" Nullable="false" />
+          <Property Name="VenturePlotId" Type="Int32" />
+          <Property Name="PlotArea" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="NorthWidth" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SouthWidth" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="EastWidth" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="WestWidth" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NorthFacing" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SouthFacing" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="EastFacing" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="WestFacing" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_ProjectTypes">
+          <Key>
+            <PropertyRef Name="ProjectTypeId" />
+          </Key>
+          <Property Name="ProjectTypeId" Type="Int32" Nullable="false" />
+          <Property Name="ProjectName" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="RE_Properts4Clients" Relationship="REDatabase.FK_RE_Properts4Clients_RE_ProjectTypes" FromRole="RE_ProjectTypes" ToRole="RE_Properts4Clients" />
+        </EntityType>
+        <EntityType Name="RE_Properts4Clients">
+          <Key>
+            <PropertyRef Name="PropId" />
+          </Key>
+          <Property Name="PropId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyTypeId" Type="Int32" />
+          <Property Name="ProjectTypeId" Type="Int32" />
+          <Property Name="VentureId" Type="Int32" />
+          <Property Name="BranchCode" Type="Int32" />
+          <Property Name="Propame" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ThumbImageUrl" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="LargeImageUrl" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Location" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Features" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="MapUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Country" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Price" Type="Int32" />
+          <Property Name="Rateperyqft" Type="Int32" />
+          <Property Name="Area" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DownloadBro" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="RE_Branches" Relationship="REDatabase.FK_RE_Properts4Clients_RE_Branches" FromRole="RE_Properts4Clients" ToRole="RE_Branches" />
+          <NavigationProperty Name="RE_ProjectTypes" Relationship="REDatabase.FK_RE_Properts4Clients_RE_ProjectTypes" FromRole="RE_Properts4Clients" ToRole="RE_ProjectTypes" />
+          <NavigationProperty Name="RE_PropertTypes" Relationship="REDatabase.FK_RE_Properts4Clients_RE_PropertTypes" FromRole="RE_Properts4Clients" ToRole="RE_PropertTypes" />
+          <NavigationProperty Name="RE_Ventures" Relationship="REDatabase.FK_RE_Properts4Clients_RE_Ventures" FromRole="RE_Properts4Clients" ToRole="RE_Ventures" />
+        </EntityType>
+        <EntityType Name="RE_PropertTypes">
+          <Key>
+            <PropertyRef Name="PropertyTypeId" />
+          </Key>
+          <Property Name="PropertyTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropFor" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PropType" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="RE_Properts4Clients" Relationship="REDatabase.FK_RE_Properts4Clients_RE_PropertTypes" FromRole="RE_PropertTypes" ToRole="RE_Properts4Clients" />
+        </EntityType>
+        <EntityType Name="RE_SliderContents">
+          <Key>
+            <PropertyRef Name="SliderId" />
+          </Key>
+          <Property Name="SliderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Caption" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="NavUrl" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_Subscribers">
+          <Key>
+            <PropertyRef Name="SubscriberId" />
+          </Key>
+          <Property Name="SubscriberId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubscriberName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="RegistratedDate" Type="DateTime" />
+          <Property Name="EmailId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="RE_TaxRates">
+          <Key>
+            <PropertyRef Name="TaxID" />
+          </Key>
+          <Property Name="TaxID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Section" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="TaxRate1" Type="Double" />
+          <Property Name="IT" Type="Double" />
+          <Property Name="SC" Type="Double" />
+          <Property Name="EC" Type="Double" />
+          <Property Name="StartDate" Type="DateTime" />
+          <Property Name="ToDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="RE_Testimonials">
+          <Key>
+            <PropertyRef Name="TestimonialId" />
+          </Key>
+          <Property Name="TestimonialId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Subject" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ThumbImageUrl" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PostedDate" Type="DateTime" />
+          <Property Name="Status" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="RE_VentureAgents">
+          <Key>
+            <PropertyRef Name="VentureAgentId" />
+          </Key>
+          <Property Name="VentureAgentId" Type="Int32" Nullable="false" />
+          <Property Name="VentureID" Type="Int32" />
+          <Property Name="AgentCode" Type="Int32" />
+          <Property Name="TeamNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ManagerCode" Type="Int32" />
+          <Property Name="CadreCode" Type="Int32" />
+          <Property Name="CadreDate" Type="DateTime" />
+          <Property Name="Status" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CommissionOffer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_VentureCadreAgents">
+          <Key>
+            <PropertyRef Name="VentureCadreAgentID" />
+          </Key>
+          <Property Name="VentureCadreAgentID" Type="Int32" Nullable="false" />
+          <Property Name="VentureID" Type="Int32" />
+          <Property Name="AgentCode" Type="Int32" />
+          <Property Name="TeamNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CadreCode" Type="Int32" />
+          <Property Name="ManagerCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CadreDate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CommissionOffer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="RE_VenturePlotPricings">
+          <Key>
+            <PropertyRef Name="PlotPriceId" />
+          </Key>
+          <Property Name="PlotPriceId" Type="Int32" Nullable="false" />
+          <Property Name="PricePerPlotAreaUnit" Type="Int64" />
+          <Property Name="ExtraCornerPrice" Type="Int64" />
+          <Property Name="CommercialPrice" Type="Int64" />
+          <Property Name="ExtraPremiumPrice" Type="Int64" />
+          <Property Name="ExtraFacingPrice" Type="Int64" />
+          <Property Name="ExtraAmenitiesPrice" Type="Int64" />
+          <Property Name="MainRoodFacingPrice" Type="Int64" />
+          <Property Name="InnerRoadFacingPrice" Type="Int64" />
+          <Property Name="BasicPrice" Type="Int64" />
+        </EntityType>
+        <EntityType Name="RE_VenturePlots">
+          <Key>
+            <PropertyRef Name="VenturePlotId" />
+          </Key>
+          <Property Name="VenturePlotId" Type="Int32" Nullable="false" />
+          <Property Name="VentureId" Type="Int32" />
+          <Property Name="PlotNo" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="PlotCategoryId" Type="Int32" />
+          <Property Name="PlotPriceId" Type="Int32" />
+          <Property Name="PlotDimensionId" Type="Int32" />
+          <Property Name="AdmissionFee" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="RE_Ventures">
+          <Key>
+            <PropertyRef Name="VentureID" />
+          </Key>
+          <Property Name="VentureID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BranchId" Type="Int32" />
+          <Property Name="VentureName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="AddressId" Type="Int32" />
+          <Property Name="VentureStartDate" Type="DateTime" />
+          <Property Name="PlotsCount" Type="Int32" />
+          <Property Name="LandAreaUnitId" Type="Int32" />
+          <Property Name="MainRoodWidth" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="InnerRoodWidth" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="RE_Cadres" Relationship="REDatabase.FK_RE_Cadres_RE_Ventures" FromRole="RE_Ventures" ToRole="RE_Cadres" />
+          <NavigationProperty Name="RE_Properts4Clients" Relationship="REDatabase.FK_RE_Properts4Clients_RE_Ventures" FromRole="RE_Ventures" ToRole="RE_Properts4Clients" />
+        </EntityType>
+        <EntityType Name="RE_VentureSchemes">
+          <Key>
+            <PropertyRef Name="SchemeId" />
+          </Key>
+          <Property Name="SchemeId" Type="Int32" Nullable="false" />
+          <Property Name="VentureId" Type="Int32" />
+          <Property Name="SchemeType" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="SchemeStartDate" Type="DateTime" />
+          <Property Name="SchemeEndDate" Type="DateTime" />
+          <Property Name="PricePerPlotAreaUnit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="AgentPricePerUnit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IntialAmount" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PlotReservationAmount" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Period" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EMI" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SpecialInstallmentGaps" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SpecialInstallmentAmount" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__6F1576F7">
+          <End Role="aspnet_Applications" Type="REDatabase.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="REDatabase.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__70FDBF69">
+          <End Role="aspnet_Applications" Type="REDatabase.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="REDatabase.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__75C27486">
+          <End Role="aspnet_Applications" Type="REDatabase.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="REDatabase.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__76B698BF">
+          <End Role="aspnet_Applications" Type="REDatabase.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="REDatabase.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__70099B30">
+          <End Role="aspnet_Users" Type="REDatabase.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="REDatabase.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__71F1E3A2">
+          <End Role="aspnet_Paths" Type="REDatabase.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="REDatabase.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__72E607DB">
+          <End Role="aspnet_Paths" Type="REDatabase.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="REDatabase.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__73DA2C14">
+          <End Role="aspnet_Users" Type="REDatabase.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="REDatabase.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__74CE504D">
+          <End Role="aspnet_Users" Type="REDatabase.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="REDatabase.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Addresses_RE_AddressTypes">
+          <End Role="RE_AddressTypes" Type="REDatabase.RE_AddressTypes" Multiplicity="0..1" />
+          <End Role="RE_Addresses" Type="REDatabase.RE_Addresses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_AddressTypes">
+              <PropertyRef Name="AddressTypeId" />
+            </Principal>
+            <Dependent Role="RE_Addresses">
+              <PropertyRef Name="AddressTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Branches_RE_Addresses">
+          <End Role="RE_Addresses" Type="REDatabase.RE_Addresses" Multiplicity="0..1" />
+          <End Role="RE_Branches" Type="REDatabase.RE_Branches" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_Addresses">
+              <PropertyRef Name="AddressId" />
+            </Principal>
+            <Dependent Role="RE_Branches">
+              <PropertyRef Name="AddressId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_AddressTypes_RE_AddressTypes">
+          <End Role="RE_AddressTypes" Type="REDatabase.RE_AddressTypes" Multiplicity="1" />
+          <End Role="RE_AddressTypes1" Type="REDatabase.RE_AddressTypes" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="RE_AddressTypes">
+              <PropertyRef Name="AddressTypeId" />
+            </Principal>
+            <Dependent Role="RE_AddressTypes1">
+              <PropertyRef Name="AddressTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Branches_RE_ContactDetails">
+          <End Role="RE_ContactDetails" Type="REDatabase.RE_ContactDetails" Multiplicity="0..1" />
+          <End Role="RE_Branches" Type="REDatabase.RE_Branches" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_ContactDetails">
+              <PropertyRef Name="ContactId" />
+            </Principal>
+            <Dependent Role="RE_Branches">
+              <PropertyRef Name="ContactId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Properts4Clients_RE_Branches">
+          <End Role="RE_Branches" Type="REDatabase.RE_Branches" Multiplicity="0..1" />
+          <End Role="RE_Properts4Clients" Type="REDatabase.RE_Properts4Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_Branches">
+              <PropertyRef Name="BranchCode" />
+            </Principal>
+            <Dependent Role="RE_Properts4Clients">
+              <PropertyRef Name="BranchCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Cadres_RE_Ventures">
+          <End Role="RE_Ventures" Type="REDatabase.RE_Ventures" Multiplicity="0..1" />
+          <End Role="RE_Cadres" Type="REDatabase.RE_Cadres" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_Ventures">
+              <PropertyRef Name="VentureID" />
+            </Principal>
+            <Dependent Role="RE_Cadres">
+              <PropertyRef Name="VentureID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Properts4Clients_RE_ProjectTypes">
+          <End Role="RE_ProjectTypes" Type="REDatabase.RE_ProjectTypes" Multiplicity="0..1" />
+          <End Role="RE_Properts4Clients" Type="REDatabase.RE_Properts4Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_ProjectTypes">
+              <PropertyRef Name="ProjectTypeId" />
+            </Principal>
+            <Dependent Role="RE_Properts4Clients">
+              <PropertyRef Name="ProjectTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Properts4Clients_RE_PropertTypes">
+          <End Role="RE_PropertTypes" Type="REDatabase.RE_PropertTypes" Multiplicity="0..1" />
+          <End Role="RE_Properts4Clients" Type="REDatabase.RE_Properts4Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_PropertTypes">
+              <PropertyRef Name="PropertyTypeId" />
+            </Principal>
+            <Dependent Role="RE_Properts4Clients">
+              <PropertyRef Name="PropertyTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RE_Properts4Clients_RE_Ventures">
+          <End Role="RE_Ventures" Type="REDatabase.RE_Ventures" Multiplicity="0..1" />
+          <End Role="RE_Properts4Clients" Type="REDatabase.RE_Properts4Clients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RE_Ventures">
+              <PropertyRef Name="VentureID" />
+            </Principal>
+            <Dependent Role="RE_Properts4Clients">
+              <PropertyRef Name="VentureId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="aspnet_UsersInRoles">
+          <End Role="aspnet_Roles" Type="REDatabase.aspnet_Roles" Multiplicity="*" />
+          <End Role="aspnet_Users" Type="REDatabase.aspnet_Users" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="REDatabaseStoreContainer" CdmEntityContainer="DB_30288_testdbEntities">
+          <EntitySetMapping Name="aspnet_Applications">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_Applications">
+              <MappingFragment StoreEntitySet="aspnet_Applications">
+                <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+                <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Membership">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_Membership">
+              <MappingFragment StoreEntitySet="aspnet_Membership">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+                <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+                <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+                <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+                <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+                <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+                <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+                <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+                <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Paths">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_Paths">
+              <MappingFragment StoreEntitySet="aspnet_Paths">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_PersonalizationAllUsers">
+              <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_PersonalizationPerUser">
+              <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Profile">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_Profile">
+              <MappingFragment StoreEntitySet="aspnet_Profile">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+                <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+                <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Roles">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_Roles">
+              <MappingFragment StoreEntitySet="aspnet_Roles">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_SchemaVersions">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_SchemaVersions">
+              <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+                <ScalarProperty Name="Feature" ColumnName="Feature" />
+                <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+                <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Users">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_Users">
+              <MappingFragment StoreEntitySet="aspnet_Users">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+                <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+                <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_WebEvent_Events">
+            <EntityTypeMapping TypeName="REDatabase.aspnet_WebEvent_Events">
+              <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+                <ScalarProperty Name="EventId" ColumnName="EventId" />
+                <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+                <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+                <ScalarProperty Name="EventType" ColumnName="EventType" />
+                <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+                <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+                <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+                <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+                <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+                <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_AboutUs">
+            <EntityTypeMapping TypeName="REDatabase.RE_AboutUs">
+              <MappingFragment StoreEntitySet="RE_AboutUs">
+                <ScalarProperty Name="AboutId" ColumnName="AboutId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ThumbImageUrl" ColumnName="ThumbImageUrl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_AccountTypes">
+            <EntityTypeMapping TypeName="REDatabase.RE_AccountTypes">
+              <MappingFragment StoreEntitySet="RE_AccountTypes">
+                <ScalarProperty Name="AccountTypeid" ColumnName="AccountTypeid" />
+                <ScalarProperty Name="AccountTypeDescription" ColumnName="AccountTypeDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Addresses">
+            <EntityTypeMapping TypeName="REDatabase.RE_Addresses">
+              <MappingFragment StoreEntitySet="RE_Addresses">
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+                <ScalarProperty Name="AddressTypeId" ColumnName="AddressTypeId" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_AddressTypes">
+            <EntityTypeMapping TypeName="REDatabase.RE_AddressTypes">
+              <MappingFragment StoreEntitySet="RE_AddressTypes">
+                <ScalarProperty Name="AddressTypeId" ColumnName="AddressTypeId" />
+                <ScalarProperty Name="AddressTypeName" ColumnName="AddressTypeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_AreaUnits">
+            <EntityTypeMapping TypeName="REDatabase.RE_AreaUnits">
+              <MappingFragment StoreEntitySet="RE_AreaUnits">
+                <ScalarProperty Name="PlotAreaUnitsID" ColumnName="PlotAreaUnitsID" />
+                <ScalarProperty Name="AreaFor" ColumnName="AreaFor" />
+                <ScalarProperty Name="AreaType" ColumnName="AreaType" />
+                <ScalarProperty Name="AreaMeasurement" ColumnName="AreaMeasurement" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Branches">
+            <EntityTypeMapping TypeName="REDatabase.RE_Branches">
+              <MappingFragment StoreEntitySet="RE_Branches">
+                <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+                <ScalarProperty Name="BranchStartDate" ColumnName="BranchStartDate" />
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+                <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Cadres">
+            <EntityTypeMapping TypeName="REDatabase.RE_Cadres">
+              <MappingFragment StoreEntitySet="RE_Cadres">
+                <ScalarProperty Name="CadreCode" ColumnName="CadreCode" />
+                <ScalarProperty Name="VentureID" ColumnName="VentureID" />
+                <ScalarProperty Name="CadreName" ColumnName="CadreName" />
+                <ScalarProperty Name="CadreValue" ColumnName="CadreValue" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_CompanyDetails">
+            <EntityTypeMapping TypeName="REDatabase.RE_CompanyDetails">
+              <MappingFragment StoreEntitySet="RE_CompanyDetails">
+                <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+                <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+                <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="FaceBookUrl" ColumnName="FaceBookUrl" />
+                <ScalarProperty Name="TwitterUrl" ColumnName="TwitterUrl" />
+                <ScalarProperty Name="YoutubeUrl" ColumnName="YoutubeUrl" />
+                <ScalarProperty Name="GoogleUrl" ColumnName="GoogleUrl" />
+                <ScalarProperty Name="Footerimageurl" ColumnName="Footerimageurl" />
+                <ScalarProperty Name="Backgroundimageurl" ColumnName="Backgroundimageurl" />
+                <ScalarProperty Name="HomeVideoUrl" ColumnName="HomeVideoUrl" />
+                <ScalarProperty Name="WelcomeDescription" ColumnName="WelcomeDescription" />
+                <ScalarProperty Name="CopyRight" ColumnName="CopyRight" />
+                <ScalarProperty Name="StyleColor" ColumnName="StyleColor" />
+                <ScalarProperty Name="PageTitle" ColumnName="PageTitle" />
+                <ScalarProperty Name="MetaKeywords" ColumnName="MetaKeywords" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_CompanyPackageSetup">
+            <EntityTypeMapping TypeName="REDatabase.RE_CompanyPackageSetup">
+              <MappingFragment StoreEntitySet="RE_CompanyPackageSetup">
+                <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="PackageStartDate" ColumnName="PackageStartDate" />
+                <ScalarProperty Name="PackageEndDate" ColumnName="PackageEndDate" />
+                <ScalarProperty Name="PackageTrailDate" ColumnName="PackageTrailDate" />
+                <ScalarProperty Name="PackageContactAgreement" ColumnName="PackageContactAgreement" />
+                <ScalarProperty Name="PackageAgreementBrief" ColumnName="PackageAgreementBrief" />
+                <ScalarProperty Name="PackageDiscussionDetails" ColumnName="PackageDiscussionDetails" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+                <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+                <ScalarProperty Name="WebSiteUrl" ColumnName="WebSiteUrl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_CompanyUserAccounts">
+            <EntityTypeMapping TypeName="REDatabase.RE_CompanyUserAccounts">
+              <MappingFragment StoreEntitySet="RE_CompanyUserAccounts">
+                <ScalarProperty Name="CompanyAccountId" ColumnName="CompanyAccountId" />
+                <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+                <ScalarProperty Name="UserTitle" ColumnName="UserTitle" />
+                <ScalarProperty Name="UserDisplayName" ColumnName="UserDisplayName" />
+                <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_ContactDetails">
+            <EntityTypeMapping TypeName="REDatabase.RE_ContactDetails">
+              <MappingFragment StoreEntitySet="RE_ContactDetails">
+                <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+                <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+                <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_ContactUs4Client">
+            <EntityTypeMapping TypeName="REDatabase.RE_ContactUs4Client">
+              <MappingFragment StoreEntitySet="RE_ContactUs4Client">
+                <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="Emailid2" ColumnName="Emailid2" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_CustomerCadreAgents">
+            <EntityTypeMapping TypeName="REDatabase.RE_CustomerCadreAgents">
+              <MappingFragment StoreEntitySet="RE_CustomerCadreAgents">
+                <ScalarProperty Name="CustomerCadreAgentCode" ColumnName="CustomerCadreAgentCode" />
+                <ScalarProperty Name="PassBookNo" ColumnName="PassBookNo" />
+                <ScalarProperty Name="VentureID" ColumnName="VentureID" />
+                <ScalarProperty Name="AgentCode" ColumnName="AgentCode" />
+                <ScalarProperty Name="AgentCadre" ColumnName="AgentCadre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Customers">
+            <EntityTypeMapping TypeName="REDatabase.RE_Customers">
+              <MappingFragment StoreEntitySet="RE_Customers">
+                <ScalarProperty Name="PassBookNo" ColumnName="PassBookNo" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="AliasName" ColumnName="AliasName" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="RelationTitle" ColumnName="RelationTitle" />
+                <ScalarProperty Name="RelationName" ColumnName="RelationName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="DOW" ColumnName="DOW" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="NomineeName" ColumnName="NomineeName" />
+                <ScalarProperty Name="NomineeTitle" ColumnName="NomineeTitle" />
+                <ScalarProperty Name="NomineeRelation" ColumnName="NomineeRelation" />
+                <ScalarProperty Name="NomineeDOB" ColumnName="NomineeDOB" />
+                <ScalarProperty Name="PermanentAddressId" ColumnName="PermanentAddressId" />
+                <ScalarProperty Name="OfficeAddressId" ColumnName="OfficeAddressId" />
+                <ScalarProperty Name="ResidenseAddressId" ColumnName="ResidenseAddressId" />
+                <ScalarProperty Name="ResidensePhonoNo" ColumnName="ResidensePhonoNo" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="EmergencyContactNo" ColumnName="EmergencyContactNo" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="SmsAlertStatus" ColumnName="SmsAlertStatus" />
+                <ScalarProperty Name="EmailAlertStatus" ColumnName="EmailAlertStatus" />
+                <ScalarProperty Name="PanNo" ColumnName="PanNo" />
+                <ScalarProperty Name="imageUrl" ColumnName="imageUrl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Designations">
+            <EntityTypeMapping TypeName="REDatabase.RE_Designations">
+              <MappingFragment StoreEntitySet="RE_Designations">
+                <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_FinancialYears">
+            <EntityTypeMapping TypeName="REDatabase.RE_FinancialYears">
+              <MappingFragment StoreEntitySet="RE_FinancialYears">
+                <ScalarProperty Name="FinancialYearID" ColumnName="FinancialYearID" />
+                <ScalarProperty Name="FinancialYear" ColumnName="FinancialYear" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Gallerys">
+            <EntityTypeMapping TypeName="REDatabase.RE_Gallerys">
+              <MappingFragment StoreEntitySet="RE_Gallerys">
+                <ScalarProperty Name="GalleryId" ColumnName="GalleryId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ThumbImageUrl" ColumnName="ThumbImageUrl" />
+                <ScalarProperty Name="LargeImageUrl" ColumnName="LargeImageUrl" />
+                <ScalarProperty Name="GalleryType" ColumnName="GalleryType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_LoginStatusDetails">
+            <EntityTypeMapping TypeName="REDatabase.RE_LoginStatusDetails">
+              <MappingFragment StoreEntitySet="RE_LoginStatusDetails">
+                <ScalarProperty Name="LoginStatusID" ColumnName="LoginStatusID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LostLogin" ColumnName="LostLogin" />
+                <ScalarProperty Name="LostLout" ColumnName="LostLout" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="MachineIP" ColumnName="MachineIP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_MasterAgents">
+            <EntityTypeMapping TypeName="REDatabase.RE_MasterAgents">
+              <MappingFragment StoreEntitySet="RE_MasterAgents">
+                <ScalarProperty Name="AgentCode" ColumnName="AgentCode" />
+                <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+                <ScalarProperty Name="AgentName" ColumnName="AgentName" />
+                <ScalarProperty Name="AliasName" ColumnName="AliasName" />
+                <ScalarProperty Name="JoinCadreCode" ColumnName="JoinCadreCode" />
+                <ScalarProperty Name="PresentCadreCode" ColumnName="PresentCadreCode" />
+                <ScalarProperty Name="JoinSeniorCode" ColumnName="JoinSeniorCode" />
+                <ScalarProperty Name="PresentSeniorCode" ColumnName="PresentSeniorCode" />
+                <ScalarProperty Name="Hiredate" ColumnName="Hiredate" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="DOW" ColumnName="DOW" />
+                <ScalarProperty Name="PanNo" ColumnName="PanNo" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="PermanentAddressId" ColumnName="PermanentAddressId" />
+                <ScalarProperty Name="CurrentAddressId" ColumnName="CurrentAddressId" />
+                <ScalarProperty Name="ResidensePhonoNo" ColumnName="ResidensePhonoNo" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="EmergencyContactNo" ColumnName="EmergencyContactNo" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+                <ScalarProperty Name="TaxEffectiveFrom" ColumnName="TaxEffectiveFrom" />
+                <ScalarProperty Name="OldTaxRate" ColumnName="OldTaxRate" />
+                <ScalarProperty Name="ApplicationScanImage" ColumnName="ApplicationScanImage" />
+                <ScalarProperty Name="PhotoScanImage" ColumnName="PhotoScanImage" />
+                <ScalarProperty Name="IdProofImage" ColumnName="IdProofImage" />
+                <ScalarProperty Name="FingerPrintImage" ColumnName="FingerPrintImage" />
+                <ScalarProperty Name="IdCardNo" ColumnName="IdCardNo" />
+                <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+                <ScalarProperty Name="imageUrl" ColumnName="imageUrl" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_ModeOfTransactions">
+            <EntityTypeMapping TypeName="REDatabase.RE_ModeOfTransactions">
+              <MappingFragment StoreEntitySet="RE_ModeOfTransactions">
+                <ScalarProperty Name="ModeOfTransactionId" ColumnName="ModeOfTransactionId" />
+                <ScalarProperty Name="ModeOfTransactionDiscription" ColumnName="ModeOfTransactionDiscription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_NewEvents">
+            <EntityTypeMapping TypeName="REDatabase.RE_NewEvents">
+              <MappingFragment StoreEntitySet="RE_NewEvents">
+                <ScalarProperty Name="NewsId" ColumnName="NewsId" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="NewsMessgae" ColumnName="NewsMessgae" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_PlotCategories">
+            <EntityTypeMapping TypeName="REDatabase.RE_PlotCategories">
+              <MappingFragment StoreEntitySet="RE_PlotCategories">
+                <ScalarProperty Name="PlotCategoryID" ColumnName="PlotCategoryID" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_PlotDimensions">
+            <EntityTypeMapping TypeName="REDatabase.RE_PlotDimensions">
+              <MappingFragment StoreEntitySet="RE_PlotDimensions">
+                <ScalarProperty Name="PlotDimensionId" ColumnName="PlotDimensionId" />
+                <ScalarProperty Name="VenturePlotId" ColumnName="VenturePlotId" />
+                <ScalarProperty Name="PlotArea" ColumnName="PlotArea" />
+                <ScalarProperty Name="NorthWidth" ColumnName="NorthWidth" />
+                <ScalarProperty Name="SouthWidth" ColumnName="SouthWidth" />
+                <ScalarProperty Name="EastWidth" ColumnName="EastWidth" />
+                <ScalarProperty Name="WestWidth" ColumnName="WestWidth" />
+                <ScalarProperty Name="NorthFacing" ColumnName="NorthFacing" />
+                <ScalarProperty Name="SouthFacing" ColumnName="SouthFacing" />
+                <ScalarProperty Name="EastFacing" ColumnName="EastFacing" />
+                <ScalarProperty Name="WestFacing" ColumnName="WestFacing" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_ProjectTypes">
+            <EntityTypeMapping TypeName="REDatabase.RE_ProjectTypes">
+              <MappingFragment StoreEntitySet="RE_ProjectTypes">
+                <ScalarProperty Name="ProjectTypeId" ColumnName="ProjectTypeId" />
+                <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Properts4Clients">
+            <EntityTypeMapping TypeName="REDatabase.RE_Properts4Clients">
+              <MappingFragment StoreEntitySet="RE_Properts4Clients">
+                <ScalarProperty Name="PropId" ColumnName="PropId" />
+                <ScalarProperty Name="PropertyTypeId" ColumnName="PropertyTypeId" />
+                <ScalarProperty Name="ProjectTypeId" ColumnName="ProjectTypeId" />
+                <ScalarProperty Name="VentureId" ColumnName="VentureId" />
+                <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+                <ScalarProperty Name="Propame" ColumnName="Propame" />
+                <ScalarProperty Name="ThumbImageUrl" ColumnName="ThumbImageUrl" />
+                <ScalarProperty Name="LargeImageUrl" ColumnName="LargeImageUrl" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Features" ColumnName="Features" />
+                <ScalarProperty Name="MapUrl" ColumnName="MapUrl" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Rateperyqft" ColumnName="Rateperyqft" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="DownloadBro" ColumnName="DownloadBro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_PropertTypes">
+            <EntityTypeMapping TypeName="REDatabase.RE_PropertTypes">
+              <MappingFragment StoreEntitySet="RE_PropertTypes">
+                <ScalarProperty Name="PropertyTypeId" ColumnName="PropertyTypeId" />
+                <ScalarProperty Name="PropFor" ColumnName="PropFor" />
+                <ScalarProperty Name="PropType" ColumnName="PropType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_SliderContents">
+            <EntityTypeMapping TypeName="REDatabase.RE_SliderContents">
+              <MappingFragment StoreEntitySet="RE_SliderContents">
+                <ScalarProperty Name="SliderId" ColumnName="SliderId" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Caption" ColumnName="Caption" />
+                <ScalarProperty Name="NavUrl" ColumnName="NavUrl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Subscribers">
+            <EntityTypeMapping TypeName="REDatabase.RE_Subscribers">
+              <MappingFragment StoreEntitySet="RE_Subscribers">
+                <ScalarProperty Name="SubscriberId" ColumnName="SubscriberId" />
+                <ScalarProperty Name="SubscriberName" ColumnName="SubscriberName" />
+                <ScalarProperty Name="RegistratedDate" ColumnName="RegistratedDate" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_TaxRates">
+            <EntityTypeMapping TypeName="REDatabase.RE_TaxRates">
+              <MappingFragment StoreEntitySet="RE_TaxRates">
+                <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+                <ScalarProperty Name="Section" ColumnName="Section" />
+                <ScalarProperty Name="TaxRate1" ColumnName="TaxRate1" />
+                <ScalarProperty Name="IT" ColumnName="IT" />
+                <ScalarProperty Name="SC" ColumnName="SC" />
+                <ScalarProperty Name="EC" ColumnName="EC" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Testimonials">
+            <EntityTypeMapping TypeName="REDatabase.RE_Testimonials">
+              <MappingFragment StoreEntitySet="RE_Testimonials">
+                <ScalarProperty Name="TestimonialId" ColumnName="TestimonialId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="ThumbImageUrl" ColumnName="ThumbImageUrl" />
+                <ScalarProperty Name="PostedDate" ColumnName="PostedDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_VentureAgents">
+            <EntityTypeMapping TypeName="REDatabase.RE_VentureAgents">
+              <MappingFragment StoreEntitySet="RE_VentureAgents">
+                <ScalarProperty Name="VentureAgentId" ColumnName="VentureAgentId" />
+                <ScalarProperty Name="VentureID" ColumnName="VentureID" />
+                <ScalarProperty Name="AgentCode" ColumnName="AgentCode" />
+                <ScalarProperty Name="TeamNo" ColumnName="TeamNo" />
+                <ScalarProperty Name="ManagerCode" ColumnName="ManagerCode" />
+                <ScalarProperty Name="CadreCode" ColumnName="CadreCode" />
+                <ScalarProperty Name="CadreDate" ColumnName="CadreDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CommissionOffer" ColumnName="CommissionOffer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_VentureCadreAgents">
+            <EntityTypeMapping TypeName="REDatabase.RE_VentureCadreAgents">
+              <MappingFragment StoreEntitySet="RE_VentureCadreAgents">
+                <ScalarProperty Name="VentureCadreAgentID" ColumnName="VentureCadreAgentID" />
+                <ScalarProperty Name="VentureID" ColumnName="VentureID" />
+                <ScalarProperty Name="AgentCode" ColumnName="AgentCode" />
+                <ScalarProperty Name="TeamNo" ColumnName="TeamNo" />
+                <ScalarProperty Name="CadreCode" ColumnName="CadreCode" />
+                <ScalarProperty Name="ManagerCode" ColumnName="ManagerCode" />
+                <ScalarProperty Name="CadreDate" ColumnName="CadreDate" />
+                <ScalarProperty Name="CommissionOffer" ColumnName="CommissionOffer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_VenturePlotPricings">
+            <EntityTypeMapping TypeName="REDatabase.RE_VenturePlotPricings">
+              <MappingFragment StoreEntitySet="RE_VenturePlotPricings">
+                <ScalarProperty Name="PlotPriceId" ColumnName="PlotPriceId" />
+                <ScalarProperty Name="PricePerPlotAreaUnit" ColumnName="PricePerPlotAreaUnit" />
+                <ScalarProperty Name="ExtraCornerPrice" ColumnName="ExtraCornerPrice" />
+                <ScalarProperty Name="CommercialPrice" ColumnName="CommercialPrice" />
+                <ScalarProperty Name="ExtraPremiumPrice" ColumnName="ExtraPremiumPrice" />
+                <ScalarProperty Name="ExtraFacingPrice" ColumnName="ExtraFacingPrice" />
+                <ScalarProperty Name="ExtraAmenitiesPrice" ColumnName="ExtraAmenitiesPrice" />
+                <ScalarProperty Name="MainRoodFacingPrice" ColumnName="MainRoodFacingPrice" />
+                <ScalarProperty Name="InnerRoadFacingPrice" ColumnName="InnerRoadFacingPrice" />
+                <ScalarProperty Name="BasicPrice" ColumnName="BasicPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_VenturePlots">
+            <EntityTypeMapping TypeName="REDatabase.RE_VenturePlots">
+              <MappingFragment StoreEntitySet="RE_VenturePlots">
+                <ScalarProperty Name="VenturePlotId" ColumnName="VenturePlotId" />
+                <ScalarProperty Name="VentureId" ColumnName="VentureId" />
+                <ScalarProperty Name="PlotNo" ColumnName="PlotNo" />
+                <ScalarProperty Name="PlotCategoryId" ColumnName="PlotCategoryId" />
+                <ScalarProperty Name="PlotPriceId" ColumnName="PlotPriceId" />
+                <ScalarProperty Name="PlotDimensionId" ColumnName="PlotDimensionId" />
+                <ScalarProperty Name="AdmissionFee" ColumnName="AdmissionFee" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_Ventures">
+            <EntityTypeMapping TypeName="REDatabase.RE_Ventures">
+              <MappingFragment StoreEntitySet="RE_Ventures">
+                <ScalarProperty Name="VentureID" ColumnName="VentureID" />
+                <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+                <ScalarProperty Name="VentureName" ColumnName="VentureName" />
+                <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+                <ScalarProperty Name="VentureStartDate" ColumnName="VentureStartDate" />
+                <ScalarProperty Name="PlotsCount" ColumnName="PlotsCount" />
+                <ScalarProperty Name="LandAreaUnitId" ColumnName="LandAreaUnitId" />
+                <ScalarProperty Name="MainRoodWidth" ColumnName="MainRoodWidth" />
+                <ScalarProperty Name="InnerRoodWidth" ColumnName="InnerRoodWidth" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RE_VentureSchemes">
+            <EntityTypeMapping TypeName="REDatabase.RE_VentureSchemes">
+              <MappingFragment StoreEntitySet="RE_VentureSchemes">
+                <ScalarProperty Name="SchemeId" ColumnName="SchemeId" />
+                <ScalarProperty Name="VentureId" ColumnName="VentureId" />
+                <ScalarProperty Name="SchemeType" ColumnName="SchemeType" />
+                <ScalarProperty Name="SchemeStartDate" ColumnName="SchemeStartDate" />
+                <ScalarProperty Name="SchemeEndDate" ColumnName="SchemeEndDate" />
+                <ScalarProperty Name="PricePerPlotAreaUnit" ColumnName="PricePerPlotAreaUnit" />
+                <ScalarProperty Name="AgentPricePerUnit" ColumnName="AgentPricePerUnit" />
+                <ScalarProperty Name="IntialAmount" ColumnName="IntialAmount" />
+                <ScalarProperty Name="PlotReservationAmount" ColumnName="PlotReservationAmount" />
+                <ScalarProperty Name="Period" ColumnName="Period" />
+                <ScalarProperty Name="EMI" ColumnName="EMI" />
+                <ScalarProperty Name="SpecialInstallmentGaps" ColumnName="SpecialInstallmentGaps" />
+                <ScalarProperty Name="SpecialInstallmentAmount" ColumnName="SpecialInstallmentAmount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="REDatabase.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="REDatabase.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+            <EndProperty Name="aspnet_Roles">
+              <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            </EndProperty>
+            <EndProperty Name="aspnet_Users">
+              <ScalarProperty Name="UserId" ColumnName="UserId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="REDatabase">
+        <EntityTypeShape EntityType="REDatabase.aspnet_Applications" Width="1.5" PointX="0.75" PointY="7.875" Height="2.5571907552083326" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.aspnet_Membership" Width="1.5" PointX="6" PointY="9.5" Height="5.4417122395833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.aspnet_Paths" Width="1.5" PointX="3" PointY="6.375" Height="2.3648893229166665" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.aspnet_PersonalizationAllUsers" Width="1.5" PointX="5.25" PointY="6.75" Height="1.7879850260416665" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.aspnet_PersonalizationPerUser" Width="1.5" PointX="5.25" PointY="3.375" Height="2.3648893229166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.aspnet_Profile" Width="1.5" PointX="10.5" PointY="11.875" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.aspnet_Roles" Width="1.5" PointX="3" PointY="15.75" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.aspnet_SchemaVersions" Width="1.5" PointX="0.75" PointY="0.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.aspnet_Users" Width="1.5" PointX="8.25" PointY="11.375" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.aspnet_WebEvent_Events" Width="1.5" PointX="2.75" PointY="9.75" Height="3.9033007812500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_AboutUs" Width="1.5" PointX="2.75" PointY="0.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_AccountTypes" Width="1.5" PointX="0.75" PointY="3.75" Height="1.4033821614583317" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Addresses" Width="1.5" PointX="9.5" PointY="15.875" Height="2.749492187499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_AddressTypes" Width="1.5" PointX="7.25" PointY="16.25" Height="1.9802864583333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_AreaUnits" Width="1.5" PointX="4.75" PointY="0.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Branches" Width="1.5" PointX="11.75" PointY="17.375" Height="2.7494921875000031" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Cadres" Width="1.5" PointX="11" PointY="4.25" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_CompanyDetails" Width="1.5" PointX="13.75" PointY="8.75" Height="4.6725065104166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_CompanyPackageSetup" Width="1.5" PointX="13.75" PointY="14.75" Height="3.7109993489583388" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_CompanyUserAccounts" Width="1.5" PointX="7.75" PointY="0.75" Height="1.9802864583333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_ContactDetails" Width="1.5" PointX="9.5" PointY="19.375" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_ContactUs4Client" Width="1.5" PointX="8.75" PointY="7.75" Height="2.5571907552083282" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_CustomerCadreAgents" Width="1.5" PointX="9.75" PointY="0.75" Height="1.9802864583333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Customers" Width="1.5" PointX="15.75" PointY="8.75" Height="6.0186165364583246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Designations" Width="1.5" PointX="15.75" PointY="15.75" Height="1.4033821614583246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_FinancialYears" Width="1.5" PointX="16.75" PointY="0.75" Height="1.4033821614583246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Gallerys" Width="1.5" PointX="16.75" PointY="3.75" Height="1.9802864583333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_LoginStatusDetails" Width="1.5" PointX="17.75" PointY="6.75" Height="2.1725878906250102" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_MasterAgents" Width="1.5" PointX="17.75" PointY="9.75" Height="6.9801236979166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_ModeOfTransactions" Width="1.5" PointX="17.75" PointY="17.75" Height="1.4033821614583246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_NewEvents" Width="1.5" PointX="18.75" PointY="0.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_PlotCategories" Width="1.5" PointX="18.75" PointY="3.75" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_PlotDimensions" Width="1.5" PointX="0.75" PointY="19.75" Height="3.1340950520833246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_ProjectTypes" Width="1.5" PointX="11.75" PointY="9.375" Height="1.595683593749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Properts4Clients" Width="1.5" PointX="14" PointY="2.75" Height="5.2494108072916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_PropertTypes" Width="1.5" PointX="11.75" PointY="21.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_SliderContents" Width="1.5" PointX="2.75" PointY="19.75" Height="1.9802864583333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Subscribers" Width="1.5" PointX="4.75" PointY="19.75" Height="1.9802864583333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_TaxRates" Width="1.5" PointX="19.75" PointY="6.75" Height="2.5571907552083246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Testimonials" Width="1.5" PointX="6.75" PointY="19.75" Height="2.1725878906250102" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_VentureAgents" Width="1.5" PointX="19.75" PointY="10.75" Height="2.7494921875000102" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_VentureCadreAgents" Width="1.5" PointX="13.75" PointY="19.75" Height="2.5571907552083246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_VenturePlotPricings" Width="1.5" PointX="19.75" PointY="14.75" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_VenturePlots" Width="1.5" PointX="19.75" PointY="18.75" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_Ventures" Width="1.5" PointX="8.75" PointY="3.75" Height="3.1340950520833246" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.RE_VentureSchemes" Width="1.5" PointX="20.75" PointY="0.75" Height="3.5186979166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="REDatabase.sysdiagram" Width="1.5" PointX="15.75" PointY="20.75" Height="1.9802864583333246" IsExpanded="true" />
+        <AssociationConnector Association="REDatabase.FK__aspnet_Me__Appli__6F1576F7" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="9.59375" />
+          <ConnectorPoint PointX="6" PointY="9.59375" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK__aspnet_Pa__Appli__70FDBF69" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="8.3074446614583337" />
+          <ConnectorPoint PointX="3" PointY="8.3074446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK__aspnet_Ro__Appli__75C27486" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="10.432190755208332" />
+          <ConnectorPoint PointX="1.5" PointY="16.932444661458334" />
+          <ConnectorPoint PointX="3" PointY="16.932444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK__aspnet_Us__Appli__76B698BF" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="9.1199446614583337" />
+          <ConnectorPoint PointX="8.2916666666666661" PointY="9.1199446614583337" />
+          <ConnectorPoint PointX="8.4583333333333339" PointY="9.1199446614583337" />
+          <ConnectorPoint PointX="8.5" PointY="9.1199446614583337" />
+          <ConnectorPoint PointX="8.5" PointY="10.557190755208328" />
+          <ConnectorPoint PointX="9" PointY="10.557190755208328" />
+          <ConnectorPoint PointX="9" PointY="11.375" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK__aspnet_Me__UserI__70099B30" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.25" PointY="13.0381982421875" />
+          <ConnectorPoint PointX="7.5" PointY="13.0381982421875" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK__aspnet_Pe__PathI__71F1E3A2" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="7.6439925130208337" />
+          <ConnectorPoint PointX="5.25" PointY="7.6439925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK__aspnet_Pe__PathI__72E607DB" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="6.375" />
+          <ConnectorPoint PointX="3.75" PointY="4.5574446614583328" />
+          <ConnectorPoint PointX="5.25" PointY="4.5574446614583328" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK__aspnet_Pe__UserI__73DA2C14" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.375" PointY="11.375" />
+          <ConnectorPoint PointX="8.375" PointY="3.53125" />
+          <ConnectorPoint PointX="6.75" PointY="3.53125" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK__aspnet_Pr__UserI__74CE504D" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="12.9612939453125" />
+          <ConnectorPoint PointX="10.5" PointY="12.9612939453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK_RE_Addresses_RE_AddressTypes" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.75" PointY="17.240143229166669" />
+          <ConnectorPoint PointX="9.5" PointY="17.240143229166669" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK_RE_Branches_RE_Addresses" ManuallyRouted="false">
+          <ConnectorPoint PointX="11" PointY="17.999746093749998" />
+          <ConnectorPoint PointX="11.75" PointY="17.999746093749998" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK_RE_AddressTypes_RE_AddressTypes" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.7819230769230776" PointY="18.230286458333339" />
+          <ConnectorPoint PointX="7.7819230769230776" PointY="18.480286458333339" />
+          <ConnectorPoint PointX="8.22846153846154" PointY="18.480286458333339" />
+          <ConnectorPoint PointX="8.22846153846154" PointY="18.230286458333339" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK_RE_Branches_RE_ContactDetails" ManuallyRouted="false">
+          <ConnectorPoint PointX="11" PointY="19.74974609375" />
+          <ConnectorPoint PointX="11.75" PointY="19.74974609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK_RE_Properts4Clients_RE_Branches" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.25" PointY="19.105499674479169" />
+          <ConnectorPoint PointX="15.40625" PointY="19.105499674479169" />
+          <ConnectorPoint PointX="15.40625" PointY="7.9994108072916674" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK_RE_Cadres_RE_Ventures" ManuallyRouted="false">
+          <ConnectorPoint PointX="10.25" PointY="5.3362939453125016" />
+          <ConnectorPoint PointX="11" PointY="5.3362939453125016" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK_RE_Properts4Clients_RE_ProjectTypes" ManuallyRouted="false">
+          <ConnectorPoint PointX="12.90625" PointY="9.375" />
+          <ConnectorPoint PointX="12.90625" PointY="7.2422493489583353" />
+          <ConnectorPoint PointX="14" PointY="7.2422493489583353" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK_RE_Properts4Clients_RE_PropertTypes" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.25" PointY="22.953837890624996" />
+          <ConnectorPoint PointX="15.3749975" PointY="22.953837890624996" />
+          <ConnectorPoint PointX="15.3749975" PointY="7.9994108072916674" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.FK_RE_Properts4Clients_RE_Ventures" ManuallyRouted="false">
+          <ConnectorPoint PointX="10.25" PointY="3.96875" />
+          <ConnectorPoint PointX="14" PointY="3.96875" />
+        </AssociationConnector>
+        <AssociationConnector Association="REDatabase.aspnet_UsersInRoles" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="15.78125" />
+          <ConnectorPoint PointX="9.125" PointY="15.78125" />
+          <ConnectorPoint PointX="9.125" PointY="14.701396484375" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
